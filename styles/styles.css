@@ -1,0 +1,137 @@
+main {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin: auto;
+  background-color: #97daff;
+  width: 425px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 40px;
+}
+
+.test-block {
+  height: 150px;
+  background-color: #e8f7ff;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.calendar-wrapper {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 135px;
+  background-color: #e8f7ff;
+  border-radius: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calendar-wrapper a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.calendar-wrapper .calendar {
+  margin: 35px 20px 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calendar-wrapper .calendar .day-wrapper {
+  margin: 5px;
+  width: 45px;
+  height: 80px;
+  border-radius: 15px;
+  background-color: #fff;
+  color: #b0b0b0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.calendar-wrapper .calendar .day-wrapper .day {
+  margin-bottom: 5px;
+}
+
+.calendar-wrapper .calendar .day-wrapper .sunday {
+  color: #ff6767;
+}
+
+.calendar-wrapper .calendar .day-wrapper .number {
+  color: #97daff;
+}
+
+.calendar-wrapper .calendar .day-wrapper .activity-wrapper {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.calendar-wrapper .calendar .day-wrapper .activity-wrapper .activity {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 2px 0 2px;
+}
+
+.calendar-wrapper .calendar .day-wrapper .activity-wrapper .filled {
+  background-color: #fff;
+}
+
+.calendar-wrapper .calendar .active {
+  background-color: #414141;
+}
+
+.calendar-wrapper .calendar .active .day {
+  color: #97daff;
+}
+
+.calendar-wrapper .calendar .active .number {
+  color: #fff;
+}
+
+.navbar-wrapper {
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  width: 425px;
+  height: 125px;
+}
+
+.navbar-wrapper .navbar {
+  margin-top: 30px;
+  color: violet;
+  background-color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,74 @@
+.calendar-wrapper {
+  font-size: 20px;
+  display: flex;
+  height: 135px;
+  background-color: $sky-blue;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+
+  .calendar {
+    margin: 35px 20px 10px 20px;
+    display: flex;
+
+    .day-wrapper {
+      margin: 5px;
+      width: 45px;
+      height: 80px;
+      border-radius: 15px;
+      background-color: $white;
+      color: $lightgray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+
+      .day {
+        margin-bottom: 5px;
+      }
+
+      .sunday {
+        color: $crimson;
+      }
+
+      .number {
+        color: $lightblue;
+      }
+
+      .activity-wrapper {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+
+        .activity {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: gray;
+          margin: 0 2px 0 2px;
+        }
+
+        .filled {
+          background-color: $white;
+        }
+      }
+    }
+
+    .active {
+      background-color: $gray;
+      .day {
+        color: $lightblue;
+      }
+      .number {
+        color: $white;
+      }
+    }
+  }
+}
+
+//activity calsses only

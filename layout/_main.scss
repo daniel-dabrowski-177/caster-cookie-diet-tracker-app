@@ -1,0 +1,17 @@
+main {
+  font-family: $Roboto;
+  font-weight: 500;
+  margin: auto;
+  background-color: $lightblue;
+  width: 425px;
+  height: 100%;
+  display: flex;
+  border-radius: 40px;
+}
+
+.test-block {
+  height: 150px;
+  background-color: $sky-blue;
+  border-radius: 30px;
+  margin-top: 20px;
+}
