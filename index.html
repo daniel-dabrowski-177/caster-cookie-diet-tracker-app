@@ -10,119 +10,665 @@
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
-    <script src="scripts/test.js" defer></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <!-- <script type="module">
+      import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+
+      const swiper = new Swiper(...);
+    </script> -->
     <title>.CookieRemaster</title>
   </head>
   <body>
     <main>
-      <div class="calendar-wrapper">
-        <div class="calendar">
-          <a href="#">
-            <div class="day-wrapper active">
-              <div class="day">M</div>
-              <div class="day number">23</div>
-              <div class="activity-wrapper">
-                <div class="activity"></div>
-                <div class="activity filled"></div>
-                <div class="activity"></div>
-              </div>
-            </div>
-          </a>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="week">
+              <a href="">
+                <div class="day">
+                  <div class="letter">M</div>
+                  <div class="number">22</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="day active">
+                  <div class="letter">T</div>
+                  <div class="number">23</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="#">
-            <div class="day-wrapper">
-              <div class="day">T</div>
-              <div class="day number">24</div>
-              <div class="activity-wrapper">
-                <div class="activity"></div>
-                <div class="activity"></div>
-                <div class="activity"></div>
-              </div>
-            </div>
-          </a>
+              <a href="">
+                <div class="day">
+                  <div class="letter">W</div>
+                  <div class="number">24</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="#">
-            <div class="day-wrapper">
-              <div class="day">W</div>
-              <div class="day number">25</div>
-              <div class="activity-wrapper">
-                <div class="activity"></div>
-                <div class="activity"></div>
-                <div class="activity"></div>
-              </div>
-            </div>
-          </a>
+              <a href="">
+                <div class="day">
+                  <div class="letter">T</div>
+                  <div class="number">25</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="">
-            <div class="day-wrapper">
-              <div class="day">T</div>
-              <div class="day number">26</div>
-              <div class="activity-wrapper">
-                <div class="activity"></div>
-                <div class="activity"></div>
-                <div class="activity"></div>
-              </div>
-            </div>
-          </a>
+              <a href="">
+                <div class="day">
+                  <div class="letter">F</div>
+                  <div class="number">26</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="#">
-            <div class="day-wrapper">
-              <div class="day">F</div>
-              <div class="day number">27</div>
-              <div class="activity-wrapper">
-                <div class="activity"></div>
-                <div class="activity"></div>
-                <div class="activity"></div>
-              </div>
-            </div>
-          </a>
+              <a href="">
+                <div class="day">
+                  <div class="letter">S</div>
+                  <div class="number">27</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="#">
-            <div class="day-wrapper">
-              <div class="day">S</div>
-              <div class="day number">28</div>
-              <div class="activity-wrapper">
-                <div class="activity"></div>
-                <div class="activity"></div>
-                <div class="activity"></div>
-              </div>
+              <a href="">
+                <div class="day">
+                  <div class="letter">S</div>
+                  <div class="number">28</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
             </div>
-          </a>
+            <div class="week">
+              <a href="">
+                <div class="day">
+                  <div class="letter">M</div>
+                  <div class="number">22</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="day active">
+                  <div class="letter">T</div>
+                  <div class="number">23</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="#">
-            <div class="day-wrapper">
-              <div class="day sunday">S</div>
-              <div class="day number">29</div>
-              <div class="activity-wrapper">
-                <div class="activity"></div>
-                <div class="activity"></div>
-                <div class="activity"></div>
-              </div>
+              <a href="">
+                <div class="day">
+                  <div class="letter">W</div>
+                  <div class="number">24</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">T</div>
+                  <div class="number">25</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">F</div>
+                  <div class="number">26</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">S</div>
+                  <div class="number">27</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">S</div>
+                  <div class="number">28</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
             </div>
-          </a>
+            <div class="week">
+              <a href="">
+                <div class="day">
+                  <div class="letter">M</div>
+                  <div class="number">22</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="day active">
+                  <div class="letter">T</div>
+                  <div class="number">23</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">W</div>
+                  <div class="number">24</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">T</div>
+                  <div class="number">25</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">F</div>
+                  <div class="number">26</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">S</div>
+                  <div class="number">27</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">S</div>
+                  <div class="number">28</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="week">
+              <a href="">
+                <div class="day">
+                  <div class="letter">M</div>
+                  <div class="number">22</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="day active">
+                  <div class="letter">T</div>
+                  <div class="number">23</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">W</div>
+                  <div class="number">24</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">T</div>
+                  <div class="number">25</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">F</div>
+                  <div class="number">26</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">S</div>
+                  <div class="number">27</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">S</div>
+                  <div class="number">28</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="week">
+              <a href="">
+                <div class="day">
+                  <div class="letter">M</div>
+                  <div class="number">22</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="day">
+                  <div class="letter">T</div>
+                  <div class="number">23</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">W</div>
+                  <div class="number">24</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">T</div>
+                  <div class="number">25</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">F</div>
+                  <div class="number">26</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">S</div>
+                  <div class="number">27</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">S</div>
+                  <div class="number">28</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="week">
+              <a href="">
+                <div class="day">
+                  <div class="letter">M</div>
+                  <div class="number">22</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="day">
+                  <div class="letter">T</div>
+                  <div class="number">23</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">W</div>
+                  <div class="number">24</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">T</div>
+                  <div class="number">25</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">F</div>
+                  <div class="number">26</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">S</div>
+                  <div class="number">27</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="day">
+                  <div class="letter">S</div>
+                  <div class="number">28</div>
+                  <div class="activity">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="test-block">test-block</div>
-      <div class="test-block">test-block</div>
-      <div class="test-block">test-block</div>
-      <div class="test-block">test-block</div>
-      <div class="test-block">test-block</div>
-      <div class="test-block">test-block</div>
-      <div class="test-block">test-block</div>
-      <div class="test-block">test-block</div>
-      <div class="test-block">test-block</div>
-      <div class="test-block">test-block</div>
-      <div class="test-block">test-block</div>
-      <div class="test-block">test-block</div>
-      <div class="test-block">test-block</div>
-      <div class="test-block">test-block</div>
-      <div class="test-block">test-block</div>
 
-      <div class="navbar-wrapper">
-        <div class="navbar">Navbar</div>
+      <div class="banner"></div>
+
+      <div class="meals">
+        <div class="labels">
+          <div class="meal-name">Breakfast</div>
+          <div class="meal-total">Total: 450kcal</div>
+        </div>
+        <div class="products">
+          <div class="meal">
+            <div class="img-bg">
+              <img src="img/icons/egg.png" alt="" />
+            </div>
+            <label>25g</label>
+          </div>
+          <div class="meal">
+            <div class="img-bg">
+              <img src="img/icons/bacon.png" alt="" />
+            </div>
+            <label>25g</label>
+          </div>
+          <div class="meal">
+            <div class="img-bg">
+              <img src="img/icons/watermelon.png" alt="" />
+            </div>
+            <label>25g</label>
+          </div>
+          <div class="meal">
+            <div class="img-bg">
+              <img src="img/icons/bread-1.png" alt="" />
+            </div>
+            <label>25g</label>
+          </div>
+          <button class="add">Add</button>
+        </div>
+      </div>
+
+      <div class="meals">
+        <div class="labels">
+          <div class="meal-name">Dinner</div>
+          <div class="meal-total">Total: 450kcal</div>
+        </div>
+        <div class="products">
+          <div class="meal">
+            <div class="img-bg">
+              <img src="img/icons/egg.png" alt="" />
+            </div>
+            <label>25g</label>
+          </div>
+          <div class="meal">
+            <div class="img-bg">
+              <img src="img/icons/bacon.png" alt="" />
+            </div>
+            <label>25g</label>
+          </div>
+          <div class="meal">
+            <div class="img-bg">
+              <img src="img/icons/watermelon.png" alt="" />
+            </div>
+            <label>25g</label>
+          </div>
+          <div class="meal">
+            <div class="img-bg">
+              <img src="img/icons/bread-1.png" alt="" />
+            </div>
+            <label>25g</label>
+          </div>
+          <button class="add">Add</button>
+        </div>
+      </div>
+
+      <div class="meals">
+        <div class="labels">
+          <div class="meal-name">Supper</div>
+          <div class="meal-total">Total: 450kcal</div>
+        </div>
+        <div class="products">
+          <div class="meal">
+            <div class="img-bg">
+              <img src="img/icons/egg.png" alt="" />
+            </div>
+            <label>25g</label>
+          </div>
+          <div class="meal">
+            <div class="img-bg">
+              <img src="img/icons/bacon.png" alt="" />
+            </div>
+            <label>25g</label>
+          </div>
+          <div class="meal">
+            <div class="img-bg">
+              <img src="img/icons/watermelon.png" alt="" />
+            </div>
+            <label>25g</label>
+          </div>
+          <div class="meal">
+            <div class="img-bg">
+              <img src="img/icons/bread-1.png" alt="" />
+            </div>
+            <label>25g</label>
+          </div>
+          <button class="add">Add</button>
+        </div>
+      </div>
+
+      <div class="meals">
+        <div class="labels">
+          <div class="meal-name">Other</div>
+          <div class="meal-total">Total: 0kcal</div>
+        </div>
+        <div class="products">
+          <div class="meal">
+            <div class="img-bg">
+              <img src="img/icons/hazelnut.png" alt="" />
+            </div>
+            <label>25g</label>
+          </div>
+          <div class="meal">
+            <div class="img-bg">
+              <img src="img/icons/water-1.png" alt="" />
+            </div>
+            <label>25g</label>
+          </div>
+
+          <button class="add">Add</button>
+        </div>
       </div>
     </main>
   </body>
+  <script src="scripts/test.js" defer></script>
 </html>

@@ -1,74 +1,80 @@
-.calendar-wrapper {
-  font-size: 20px;
-  display: flex;
-  height: 135px;
+.swiper {
   background-color: $sky-blue;
   border-radius: 40px;
-  align-items: center;
-  justify-content: center;
-
-  a {
-    text-decoration: none;
-    color: $white;
-  }
-
-  .calendar {
-    margin: 35px 20px 10px 20px;
-    display: flex;
-
-    .day-wrapper {
-      margin: 5px;
-      width: 45px;
-      height: 80px;
-      border-radius: 15px;
-      background-color: $white;
-      color: $lightgray;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-
-      .day {
-        margin-bottom: 5px;
-      }
-
-      .sunday {
-        color: $crimson;
-      }
-
-      .number {
-        color: $lightblue;
-      }
-
-      .activity-wrapper {
-        margin-bottom: 10px;
-        display: flex;
-        flex-direction: row;
-
-        .activity {
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          background-color: gray;
-          margin: 0 2px 0 2px;
-        }
-
-        .filled {
-          background-color: $white;
-        }
-      }
-    }
-
-    .active {
-      background-color: $gray;
-      .day {
-        color: $lightblue;
-      }
-      .number {
-        color: $white;
-      }
-    }
-  }
+  width: 425px;
+  // height: 135px;
 }
 
-//activity calsses only
+.week {
+  display: flex;
+  margin: 35px 20px 10px 20px;
+  justify-content: space-between;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  height: 80px;
+  background-color: white;
+  border-radius: 15px;
+  justify-content: space-around;
+}
+
+.letter {
+  display: flex;
+  color: $lightgray;
+  justify-content: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.number {
+  display: flex;
+  color: $lightblue;
+  justify-content: center;
+}
+
+.activity {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: $lightgray;
+  border-radius: 50%;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.active {
+  background-color: $gray;
+}
+
+.active > .letter {
+  color: $lightblue;
+}
+
+.active > .number {
+  color: $white;
+}
+
+.active > .activity > .dot {
+  background-color: $white;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+.banner {
+  height: 6px;
+  width: 180px;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 8px;
+  background-color: $gray;
+  cursor: pointer;
+}
