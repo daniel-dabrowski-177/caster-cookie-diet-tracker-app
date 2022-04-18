@@ -2,7 +2,25 @@
   background-color: $sky-blue;
   border-radius: 40px;
   width: 425px;
-  // height: 135px;
+  height: 135px;
+}
+
+.short {
+  min-height: 135px;
+}
+
+.mid {
+  min-height: 250px;
+}
+
+.large {
+  min-height: 500px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 
 .week {

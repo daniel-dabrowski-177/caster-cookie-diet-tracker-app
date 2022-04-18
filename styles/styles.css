@@ -5,10 +5,35 @@ main {
   margin: auto;
 }
 
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
 .swiper {
   background-color: #e8f7ff;
   border-radius: 40px;
   width: 425px;
+  height: 135px;
+}
+
+.short {
+  min-height: 135px;
+}
+
+.mid {
+  min-height: 250px;
+}
+
+.large {
+  min-height: 500px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 
 .week {
@@ -142,6 +167,7 @@ a {
   margin-top: 10px;
   margin-left: 40px;
   margin-right: 40px;
+  overflow-x: scroll;
 }
 
 .img-bg {
@@ -189,6 +215,7 @@ a {
 .add {
   width: 35px;
   height: 35px;
-  margin: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
 }
 /*# sourceMappingURL=styles.css.map */
