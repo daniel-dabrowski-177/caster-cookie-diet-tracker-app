@@ -10,6 +10,7 @@ main {
   font-family: $Roboto;
   background-color: $lightblue;
   margin: auto;
+  padding-bottom: 125px;
 }
 
 .box {
@@ -23,5 +24,5 @@ nav {
   bottom: 0;
   height: 125px;
   background-color: $white;
-  width: calc(100% - 20px);
+  width: 100%;
 }
