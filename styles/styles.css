@@ -70,8 +70,8 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 35px;
-  min-height: 70px;
+  min-width: 45px;
+  min-height: 85px;
   background-color: white;
   border-radius: 15px;
   -ms-flex-pack: distribute;
@@ -262,6 +262,7 @@ content {
   margin-right: 10px;
   margin-left: 10px;
   margin-top: 125px;
+  margin-bottom: 125px;
 }
 
 .searchbar {
@@ -270,6 +271,7 @@ content {
   height: 125px;
   background-color: #fff;
   width: calc(100% - 20px);
+  background-color: #97daff;
 }
 
 .searchbar > input {
