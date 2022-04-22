@@ -1,6 +1,10 @@
 html,
 body {
-  min-width: 425px;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
 }
 
 main {
@@ -21,13 +25,12 @@ nav {
   height: 125px;
   background-color: #fff;
   width: calc(100% - 20px);
-  border-radius: 0 0 30px 30px;
 }
 
 .swiper {
   background-color: #e8f7ff;
   border-radius: 40px;
-  width: 425px;
+  max-width: 425px;
   height: 135px;
 }
 
@@ -67,8 +70,8 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 45px;
-  height: 80px;
+  min-width: 35px;
+  min-height: 70px;
   background-color: white;
   border-radius: 15px;
   -ms-flex-pack: distribute;
@@ -258,7 +261,7 @@ content {
   width: calc(100% - 20px);
   margin-right: 10px;
   margin-left: 10px;
-  border-radius: 30px;
+  margin-top: 125px;
 }
 
 .searchbar {
@@ -267,7 +270,6 @@ content {
   height: 125px;
   background-color: #fff;
   width: calc(100% - 20px);
-  border-radius: 30px 30px 0 0;
 }
 
 .searchbar > input {
@@ -315,7 +317,6 @@ content {
 }
 
 .container {
-  margin-top: 125px;
   margin-left: 25px;
   margin-right: 25px;
   display: -webkit-box;

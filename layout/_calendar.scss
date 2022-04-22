@@ -1,7 +1,7 @@
 .swiper {
   background-color: $sky-blue;
   border-radius: 40px;
-  width: 425px;
+  max-width: 425px;
   height: 135px;
 }
 
@@ -32,8 +32,8 @@
 .day {
   display: flex;
   flex-direction: column;
-  width: 45px;
-  height: 80px;
+  min-width: 35px;
+  min-height: 70px;
   background-color: white;
   border-radius: 15px;
   justify-content: space-around;
