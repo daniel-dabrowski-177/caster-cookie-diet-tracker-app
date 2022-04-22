@@ -1,7 +1,11 @@
+html,
+body {
+  min-width: 425px;
+}
+
 main {
   font-family: $Roboto;
   background-color: $lightblue;
-  width: 425px;
   margin: auto;
 }
 
@@ -9,4 +13,13 @@ main {
   width: 100px;
   height: 100px;
   background-color: red;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  height: 125px;
+  background-color: $white;
+  width: calc(100% - 20px);
+  border-radius: 0 0 30px 30px;
 }
