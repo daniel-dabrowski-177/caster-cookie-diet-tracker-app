@@ -412,7 +412,6 @@ content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-overflow: clip;
   font-family: Roboto;
   font-size: 22px;
   font-weight: 600;
