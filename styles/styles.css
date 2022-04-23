@@ -324,11 +324,20 @@ content {
 
 .searchbar {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   top: 0;
   height: 125px;
   background-color: #fff;
   width: calc(100% - 20px);
   background-color: #97daff;
+}
+
+.search-icon {
+  width: 40px;
+  height: 40px;
+  color: #fff;
 }
 
 .searchbar > input {
@@ -396,14 +405,21 @@ content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 33%;
+  overflow-x: hidden;
 }
 
 .product > label {
-  width: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,8 +428,7 @@ content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Roboto;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 28px;
   text-align: left;
@@ -421,7 +436,7 @@ content {
 }
 
 .clicked > .bg-icon {
-  border: 5px solid #00a4ff;
+  border: 3px solid #00a4ff;
   background-color: #97daff;
 }
 

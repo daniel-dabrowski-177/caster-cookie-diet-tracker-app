@@ -10,11 +10,18 @@ content {
 
 .searchbar {
   position: fixed;
+  display: flex;
   top: 0;
   height: 125px;
   background-color: $white;
   width: calc(100% - 20px);
   background-color: $lightblue;
+}
+
+.search-icon {
+  width: 40px;
+  height: 40px;
+  color: $white;
 }
 
 .searchbar > input {
@@ -47,19 +54,22 @@ content {
 
 .product {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  width: 33%;
+  overflow-x: hidden;
 }
 
 .product > label {
-  width: 80px;
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
   justify-content: center;
-  // text-overflow: ;
+  // width: 33%;
 
-  font-family: Roboto;
-  font-size: 22px;
+  // font-family: Roboto;
+  font-size: 18px;
   font-weight: 600;
   line-height: 28px;
   text-align: left;
@@ -67,7 +77,7 @@ content {
 }
 
 .clicked > .bg-icon {
-  border: 5px solid $blue;
+  border: 3px solid $blue;
   background-color: $lightblue;
 }
 
