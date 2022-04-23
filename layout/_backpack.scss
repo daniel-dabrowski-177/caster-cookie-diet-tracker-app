@@ -36,8 +36,8 @@ content {
 }
 
 .container {
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,6 +56,7 @@ content {
   margin-top: 10px;
   margin-bottom: 10px;
   justify-content: center;
+  text-overflow: ;
 
   font-family: Roboto;
   font-size: 22px;
@@ -79,12 +80,13 @@ content {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 25px;
+  margin: 5px;
 }
 
 .bg-icon > img {
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
 }
