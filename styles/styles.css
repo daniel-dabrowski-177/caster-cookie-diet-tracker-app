@@ -8,7 +8,7 @@ body {
 }
 
 main {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #97daff;
   margin: auto;
   padding-bottom: 125px;
@@ -23,7 +23,7 @@ main {
 nav {
   position: fixed;
   bottom: 0;
-  height: 125px;
+  height: 80px;
   background-color: #fff;
   width: 100%;
 }
@@ -249,29 +249,14 @@ a {
           align-items: center;
   margin-left: 35px;
   margin-right: 35px;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 50px;
   background-color: #fff;
 }
 
 .icon {
-  width: 55px;
-  height: 55px;
-}
-
-.icon-right {
-  background-color: #97daff;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
+  width: 40px;
+  height: 40px;
 }
 
 .icon-center {
@@ -287,9 +272,31 @@ a {
   cursor: pointer;
 }
 
+.icon-center > img {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-right {
+  background-color: #97daff;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
 .icon-right > img {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
 }
 
 .icon-left {
@@ -306,8 +313,8 @@ a {
 }
 
 .icon-left > img {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
 }
 
 content {
@@ -318,7 +325,7 @@ content {
   width: calc(100% - 20px);
   margin-right: 10px;
   margin-left: 10px;
-  margin-top: 125px;
+  margin-top: 80px;
   margin-bottom: 125px;
 }
 
@@ -328,7 +335,7 @@ content {
   display: -ms-flexbox;
   display: flex;
   top: 0;
-  height: 125px;
+  height: 80px;
   background-color: #fff;
   width: calc(100% - 20px);
   background-color: #97daff;
@@ -345,41 +352,42 @@ content {
   margin-right: 35px;
   margin-top: 25px;
   margin-bottom: 35px;
-  height: 70px;
+  height: 50px;
+  border-radius: 30px;
 }
 
 .searchbar > input::-webkit-input-placeholder {
   color: gray;
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 28px;
   text-align: left;
 }
 
 .searchbar > input:-ms-input-placeholder {
   color: gray;
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 28px;
   text-align: left;
 }
 
 .searchbar > input::-ms-input-placeholder {
   color: gray;
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 28px;
   text-align: left;
 }
 
 .searchbar > input::placeholder {
   color: gray;
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 28px;
   text-align: left;
 }
@@ -428,8 +436,9 @@ content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 28px;
   text-align: left;
   color: #fff;

@@ -4,23 +4,14 @@
   align-items: center;
   margin-left: 35px;
   margin-right: 35px;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 50px;
   background-color: $white;
 }
 
 .icon {
-  width: 55px;
-  height: 55px;
-}
-
-.icon-right {
-  background-color: $lightblue;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  width: 40px;
+  height: 40px;
 }
 
 .icon-center {
@@ -30,9 +21,25 @@
   cursor: pointer;
 }
 
+.icon-center > img {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-right {
+  background-color: $lightblue;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
 .icon-right > img {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
 }
 
 .icon-left {
@@ -43,6 +50,6 @@
 }
 
 .icon-left > img {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
 }

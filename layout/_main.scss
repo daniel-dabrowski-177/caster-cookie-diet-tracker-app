@@ -7,7 +7,8 @@ body {
 }
 
 main {
-  font-family: $Roboto;
+  // font-family: $Roboto;
+  font-family: $Inter;
   background-color: $lightblue;
   margin: auto;
   padding-bottom: 125px;
@@ -22,7 +23,7 @@ main {
 nav {
   position: fixed;
   bottom: 0;
-  height: 125px;
+  height: 80px;
   background-color: $white;
   width: 100%;
 }
