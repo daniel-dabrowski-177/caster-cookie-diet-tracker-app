@@ -23,9 +23,10 @@ main {
 nav {
   position: fixed;
   bottom: 0;
-  height: 80px;
+  height: 90px;
   background-color: #fff;
   width: 100%;
+  border-radius: 30px 30px 0 0;
 }
 
 .swiper {
@@ -249,7 +250,7 @@ a {
           align-items: center;
   margin-left: 35px;
   margin-right: 35px;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 50px;
   background-color: #fff;
 }
@@ -273,8 +274,8 @@ a {
 }
 
 .icon-center > img {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 }
 
 .icon-right {
@@ -313,8 +314,8 @@ a {
 }
 
 .icon-left > img {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 }
 
 content {
@@ -325,7 +326,7 @@ content {
   width: calc(100% - 20px);
   margin-right: 10px;
   margin-left: 10px;
-  margin-top: 80px;
+  margin-top: 90px;
   margin-bottom: 125px;
 }
 
@@ -336,6 +337,7 @@ content {
   display: flex;
   top: 0;
   height: 80px;
+  padding-bottom: 10px;
   background-color: #fff;
   width: calc(100% - 20px);
   background-color: #97daff;
