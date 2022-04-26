@@ -11,6 +11,8 @@ content {
 .searchbar {
   position: fixed;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   top: 0;
   height: 80px;
   padding-bottom: 10px;
@@ -20,29 +22,33 @@ content {
 }
 
 .search-icon {
+  align-items: center;
   width: 40px;
   height: 40px;
+  color: $white;
+  margin-right: 50px;
+}
+
+.search-icon > img {
+  width: 30px;
+  height: 30px;
   color: $white;
 }
 
 .searchbar > input {
-  // min-width: 340px;
-  margin-left: 35px;
-  margin-right: 35px;
-  margin-top: 25px;
-  margin-bottom: 35px;
+  margin: 35px 35px 35px 45px;
   height: 50px;
   border-radius: 30px;
+  border: none;
 }
 
 .searchbar > input::placeholder {
-  color: gray;
-  // font-family: Roboto;
+  color: #aaa;
   font-family: $Inter;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 28px;
-  text-align: left;
+  text-align: center;
 }
 
 .container {
