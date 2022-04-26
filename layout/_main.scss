@@ -4,10 +4,11 @@ body {
   margin: 0;
   box-sizing: border-box;
   width: 100%;
+  height: 100%;
+  background-color: $lightblue;
 }
 
 main {
-  // font-family: $Roboto;
   font-family: $Inter;
   background-color: $lightblue;
   margin: auto;
@@ -22,6 +23,7 @@ main {
 
 nav {
   position: fixed;
+  justify-content: space-between;
   bottom: 0;
   height: 90px;
   background-color: $white;

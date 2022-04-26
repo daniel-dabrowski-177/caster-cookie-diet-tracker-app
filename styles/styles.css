@@ -5,6 +5,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
+  height: 100%;
+  background-color: #97daff;
 }
 
 main {
@@ -22,6 +24,9 @@ main {
 
 nav {
   position: fixed;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   bottom: 0;
   height: 90px;
   background-color: #fff;
@@ -142,7 +147,7 @@ a {
 
 .banner {
   height: 6px;
-  width: 180px;
+  width: 55px;
   border-radius: 50px;
   margin: auto;
   margin-top: 8px;
@@ -242,9 +247,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -253,6 +255,10 @@ a {
   margin-top: 10px;
   margin-bottom: 50px;
   background-color: #fff;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .icon {
@@ -322,12 +328,34 @@ content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #97daff;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: calc(100% - 20px);
   margin-right: 10px;
   margin-left: 10px;
-  margin-top: 90px;
-  margin-bottom: 125px;
+  padding-top: 90px;
+}
+
+.container {
+  background-color: #97daff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow-y: scroll;
+  padding-bottom: 80px;
 }
 
 .searchbar {
@@ -338,12 +366,11 @@ content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   top: 0;
   height: 80px;
-  padding-bottom: 10px;
   background-color: #fff;
   width: calc(100% - 20px);
   background-color: #97daff;
@@ -357,6 +384,7 @@ content {
   height: 40px;
   color: #fff;
   margin-right: 50px;
+  margin-top: 10px;
 }
 
 .search-icon > img {
@@ -366,7 +394,7 @@ content {
 }
 
 .searchbar > input {
-  margin: 35px 35px 35px 45px;
+  margin: 35px 10px 35px 35px;
   height: 50px;
   border-radius: 30px;
   border: none;
@@ -376,7 +404,7 @@ content {
   color: #aaa;
   font-family: "Inter", sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 28px;
   text-align: center;
 }
@@ -385,7 +413,7 @@ content {
   color: #aaa;
   font-family: "Inter", sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 28px;
   text-align: center;
 }
@@ -394,7 +422,7 @@ content {
   color: #aaa;
   font-family: "Inter", sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 28px;
   text-align: center;
 }
@@ -403,26 +431,9 @@ content {
   color: #aaa;
   font-family: "Inter", sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 28px;
   text-align: center;
-}
-
-.container {
-  margin-left: 15px;
-  margin-right: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  overflow-y: scroll;
 }
 
 .product {
@@ -489,5 +500,9 @@ content {
 .bg-icon > img {
   width: 45px;
   height: 45px;
+}
+
+.hide {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */

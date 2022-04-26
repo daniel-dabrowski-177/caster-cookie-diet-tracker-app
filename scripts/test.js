@@ -11,9 +11,6 @@ banner.addEventListener("click", () => {
 
   switch (sw.style.height) {
     case "135px":
-      sw.style.height = "250px"
-      break
-    case "250px":
       sw.style.height = "500px"
       break
     case "500px":

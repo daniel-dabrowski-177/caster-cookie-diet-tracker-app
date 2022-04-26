@@ -1,12 +1,13 @@
 .buttons {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-left: 35px;
   margin-right: 35px;
   margin-top: 10px;
   margin-bottom: 50px;
   background-color: $white;
+  display: flex;
+  justify-content: space-between;
 }
 
 .icon {

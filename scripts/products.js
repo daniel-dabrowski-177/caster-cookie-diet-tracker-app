@@ -33,7 +33,6 @@ const clicked = document.querySelectorAll(".clicked")
 product.forEach((p) =>
   p.addEventListener("click", () => {
     let productName = p.children[1].textContent
-    console.log("sth")
 
     if (p.classList[1] == null) {
       count++
@@ -49,3 +48,19 @@ product.forEach((p) =>
     }
   })
 )
+
+const searchInput = document.querySelector("#search")
+
+searchInput.addEventListener("input", (e) => {
+  const value = e.target.value.toLowerCase()
+
+  for (let i = 0; i < 80; i++) {
+    const item = product[i].childNodes[2].textContent
+
+    if (item.includes(value)) {
+      product[i].classList.remove("hide")
+    } else {
+      product[i].classList.add("hide")
+    }
+  }
+})
