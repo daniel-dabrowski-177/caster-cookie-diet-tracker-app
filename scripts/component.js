@@ -93,3 +93,14 @@ add.forEach((e) => {
     location.href = "pages/backpack.html"
   })
 })
+
+let iconRight = document.querySelector(".icon-right")
+
+iconRight.addEventListener("click", () => {
+  localStorage.setItem("Breakfast", `[""]`)
+  localStorage.setItem("Dinner", `[""]`)
+  localStorage.setItem("Supper", `[""]`)
+  localStorage.setItem("Other", `[""]`)
+  localStorage.setItem("sesionName", "Breakfast")
+  location.reload()
+})
