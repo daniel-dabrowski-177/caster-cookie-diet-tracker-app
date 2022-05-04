@@ -1,0 +1,81 @@
+section {
+  margin: 0;
+  padding: 0;
+  background-color: $sky-blue;
+  margin-top: 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  height: 135px;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: $lightblue;
+  font-size: 18px;
+}
+
+.meal-name {
+  margin-top: 10px;
+}
+
+.meal-total {
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-top: 10px;
+  // margin-left: 40px;
+  // margin-right: 40px;
+  overflow-x: scroll;
+  // scrollbar-width: 0px;
+}
+
+li {
+  margin: 0;
+}
+
+.img-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: $white;
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+.img-bg > img {
+  width: 40px;
+  height: 40px;
+}
+
+li > label {
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  color: $blue;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+.add {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  margin-top: 15px;
+}

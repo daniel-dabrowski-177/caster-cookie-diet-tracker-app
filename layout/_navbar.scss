@@ -1,0 +1,107 @@
+.navButtons {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: $white;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.chooseButtons {
+  background-color: $white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 240px;
+  width: 90px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25);
+  display: none;
+  transition: margin-right 4s;
+}
+
+.applyButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  height: 80px;
+  width: 90px;
+  border-radius: 30px 30px 0 0;
+  cursor: pointer;
+}
+
+.applyButton > img {
+  width: 30px;
+  height: 30px;
+}
+
+.removeButton {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+  background-color: $white;
+  height: 60px;
+  width: 90px;
+  cursor: pointer;
+}
+
+.removeButton > img {
+  width: 40px;
+  height: 40px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-center > img {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-right {
+  background-color: $lightblue;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.icon-right > img {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-left > img {
+  width: 25px;
+  height: 25px;
+}
