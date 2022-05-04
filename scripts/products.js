@@ -1,5 +1,5 @@
-const container = document.querySelector(".container")
-const home = document.querySelector(".icon-center")
+let container = document.querySelector(".container")
+let home = document.querySelector(".icon-center")
 let count = 0
 
 let Breakfast = localStorage.getItem("Breakfast")
@@ -92,6 +92,26 @@ switch (localStorage.sesionName) {
       container.appendChild(div)
     }
     break
+  default:
+    if (Breakfast === null) {
+      Breakfast = [""]
+    } else {
+      Breakfast = JSON.parse(Breakfast)
+    }
+    for (let i = 0; i < 80; i++) {
+      let div = document.createElement("div")
+
+      if (Breakfast.includes(products[i].name, 1)) {
+        div.classList.add("clicked")
+      }
+      div.innerHTML = `<div class="bg-icon">
+        <img src="/img/icons/${products[i].name}.png" alt="" />
+        </div>
+        <label>${products[i].name}</label>`
+
+      div.classList.add("product")
+      container.appendChild(div)
+    }
 }
 
 const product = document.querySelectorAll(".product")
@@ -187,6 +207,26 @@ product.forEach((p) =>
         }
         console.log(count)
         break
+      default:
+        console.log("Breakfast")
+        if (p.classList[1] == null) {
+          count++
+          p.classList.add("clicked")
+          Breakfast.push(productName)
+          localStorage.setItem("Breakfast", JSON.stringify(Breakfast))
+        } else {
+          p.classList.remove("clicked")
+          count--
+          let pos = Breakfast.indexOf(productName)
+          Breakfast.splice(pos, 1)
+          localStorage.setItem("Breakfast", JSON.stringify(Breakfast))
+        }
+        if (count > 0) {
+          chooseButtons.style.display = "inherit"
+        } else {
+          chooseButtons.style.display = "none"
+        }
+        console.log(count)
     }
   })
 )
