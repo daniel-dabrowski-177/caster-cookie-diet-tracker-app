@@ -10,6 +10,18 @@ Dinner = JSON.parse(Dinner)
 Supper = JSON.parse(Supper)
 Other = JSON.parse(Other)
 
+let iconRight = document.querySelector(".icon-right")
+
+iconRight.addEventListener("click", () => {
+  localStorage.setItem("Breakfast", `[""]`)
+  localStorage.setItem("Dinner", `[""]`)
+  localStorage.setItem("Supper", `[""]`)
+  localStorage.setItem("Other", `[""]`)
+  localStorage.setItem("sesionName", "Breakfast")
+  location.reload()
+  console.log("clicked")
+})
+
 let products = (i) => {
   switch (i) {
     case 0:
@@ -92,15 +104,4 @@ add.forEach((e) => {
     console.log(SectionName)
     location.href = "pages/backpack.html"
   })
-})
-
-let iconRight = document.querySelector(".icon-right")
-
-iconRight.addEventListener("click", () => {
-  localStorage.setItem("Breakfast", `[""]`)
-  localStorage.setItem("Dinner", `[""]`)
-  localStorage.setItem("Supper", `[""]`)
-  localStorage.setItem("Other", `[""]`)
-  localStorage.setItem("sesionName", "Breakfast")
-  location.reload()
 })
