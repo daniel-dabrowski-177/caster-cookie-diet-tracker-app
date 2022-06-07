@@ -1,6 +1,7 @@
 let swiperEl = document.querySelector(".swiper")
 let swiperWrapper = document.querySelector(".swiper-wrapper")
 
+let week = ["M", "T", "W", "T", "F", "S", "S"]
 let month = [
   "January",
   "February",
@@ -15,13 +16,9 @@ let month = [
   "November",
   "December",
 ]
-let week = ["M", "T", "W", "T", "F", "S", "S"]
-let count = "1"
 
 const today = new Date()
-
 const lastDay = new Date(today.getFullYear() - 2, today.getMonth(), 0)
-
 const firstFetchPoint = new Date(
   today.getFullYear() - 2,
   today.getMonth(),
@@ -29,12 +26,26 @@ const firstFetchPoint = new Date(
 )
 const lastFetchPoint = new Date(today.getFullYear() + 1, 11)
 
-// firstFetchPoint < lastFetchPoint
 let currentDay = ""
-let currentWeek = ""
 let numberOfDays = ""
-let numberOfWeeks = ""
 let i = 0
+let arr = {
+  date: today.toLocaleDateString(),
+  products: {
+    0: [""],
+    1: [""],
+    2: [""],
+    3: [""],
+  },
+  values: {
+    0: [""],
+    1: [""],
+    2: [""],
+    3: [""],
+  },
+}
+
+renderDefault()
 
 for (let i = 0; currentDay <= lastFetchPoint; i++) {
   let swiperSlide = document.createElement("div")
@@ -74,56 +85,6 @@ for (let i = 0; currentDay <= lastFetchPoint; i++) {
   numberOfDays++
 }
 
-/////////////////////////////////////////////////////////////////
-
-// // Actual Date
-// let date = new Date().toLocaleDateString()
-// console.log(date)
-
-// // Array Constructor Template
-// let arr = {
-//   date: date,
-//   products: {
-//     0: ["apple", "asparagus", "avocado"],
-//     1: ["bacon", "banana", "beans"],
-//     2: ["biscuit", "blueberries", "bread"],
-//     3: [""],
-//     // ["broccoli", "nutella", "cabbage"],
-//   },
-//   values: {
-//     0: [60, 15, 12],
-//     1: [65, 125, 128],
-//     2: [630, 125, 112],
-//     3: [630, 175, 112],
-//   },
-// }
-
-// console.log(arr)
-
-// // Array get productName & productValue
-// console.log(arr)
-// console.log(arr.products[1][2])
-// console.log(arr.values[1][2])
-
-// // Stringify & Save to localStorage...
-// arr = JSON.stringify(arr)
-// localStorage.setItem(date, arr)
-
-// // ...Get it back as an Array
-// let Data = localStorage.getItem(date)
-// Data = JSON.parse(Data)
-// console.log(Data)
-
-// // Custom Product Constructor
-// let myProducts = ["broccoli", "nutella", "cabbage"]
-// Data.products[3] = myProducts
-// console.log(Data)
-
-// // Key: Data,
-// // Value: Object
-
-/////////////////////////////////////////////////////////////////
-
 let days = document.querySelectorAll(".day")
 days.forEach((d) => {
   d.addEventListener("click", () => {
@@ -143,10 +104,15 @@ days.forEach((d) => {
         3: [""],
       },
     }
+    arr = JSON.stringify(arr)
 
     if (localStorage.getItem(dayData) == null) {
-      arr = JSON.stringify(arr)
       localStorage.setItem(dayData, arr)
+      localStorage.setItem("actualDay", arr)
+    } else {
+      let actualData = localStorage.getItem(dayData)
+      localStorage.setItem("actualDay", actualData)
     }
+    renderDefault()
   })
 })
