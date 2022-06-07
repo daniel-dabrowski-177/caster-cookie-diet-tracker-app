@@ -89,6 +89,16 @@ let days = document.querySelectorAll(".day")
 days.forEach((d) => {
   d.addEventListener("click", () => {
     let dayData = d.children[1].attributes[1].nodeValue
+    let actualDay = localStorage.getItem("actualDay")
+    actualDay = JSON.parse(actualDay)
+
+    console.log(actualDay.date)
+    console.log(dayData)
+
+    if (actualDay.date == dayData) {
+      d.classList.add("pickedDay")
+    }
+
     let arr = {
       date: dayData,
       products: {

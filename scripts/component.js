@@ -46,10 +46,14 @@ let renderDefault = () => {
       let li = document.createElement("li")
       let ul = document.querySelectorAll("ul")
 
-      li.innerHTML = `<div class="img-bg">
+      li.innerHTML = `<div>
+      <div class="meal">
+      <div class="img-bg">
           <img src="img/icons/${actualDay.products[i][j]}.png" alt="" />
         </div>
-          <label>${actualDay.values[i][j]}g</label>`
+          <label>${actualDay.values[i][j]}g</label>
+          </div>
+          </div>`
       ul[i].prepend(li)
     }
   }

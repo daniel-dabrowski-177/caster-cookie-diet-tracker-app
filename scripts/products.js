@@ -25,7 +25,7 @@ for (let i = 0; i <= 4; i++) {
     virtualArray = actualDay.products[i - 1]
     // console.log(virtualArray)
 
-    for (let i = 0; i <= products.length; i++) {
+    for (let i = 0; i < products.length; i++) {
       // 1. Create divs
       let div = document.createElement("div")
       div.innerHTML = `<div class="bg-icon">

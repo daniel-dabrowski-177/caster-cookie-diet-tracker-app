@@ -39,23 +39,14 @@ for (let i = 0; i <= 3; i++) {
 
       ul.append(newLi)
     }
-
-    // confirmBtn.addEventListener("click", () => {
-    //   console.log(productsName)
-    //   console.log(productsCals)
-    //   console.log(productsGrams)
-    //   console.log(actualDay.values[i])
-    //   console.log(i)
-
-    //   // actualDay.values[i] = productsCals
-    // })
   }
 }
 
-for (let i = 0; i < products.length; i++) {
-  if (productsName.includes(products[i].name)) {
-    // console.log(products[i].calories)
-    productsCals.push(products[i].calories)
+for (let i = 1; i < productsName.length; i++) {
+  for (let j = 0; j < products.length; j++) {
+    if (productsName[i].includes(products[j].name)) {
+      productsCals.push(products[j].calories)
+    }
   }
 }
 
@@ -98,6 +89,7 @@ for (let i = 0; i < li.length; i++) {
       if (actualMeal == meals[i]) {
         console.log(productsGrams)
         console.log(actualDay.values[i])
+        console.log(i)
 
         actualDay.values[i] = productsGrams
         console.log(actualDay)
