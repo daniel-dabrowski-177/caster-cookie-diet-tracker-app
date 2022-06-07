@@ -1,0 +1,96 @@
+.selector {
+  padding-top: 15px;
+  padding-bottom: 100px;
+}
+
+.products-wrapper > ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.products-wrapper ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90vw;
+  height: 100px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 3px solid $main-dark;
+  border-radius: 20px;
+}
+
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  margin-left: 20px;
+}
+
+.img-wrapper .img-bg {
+  margin: auto;
+}
+
+.img-wrapper > label {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-wrapper > button {
+  margin: 10px;
+}
+
+.button-wrapper > img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.text {
+  display: flex;
+  width: auto;
+  margin: 5px;
+}
+
+.text > label {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.text > input {
+  width: 50px;
+  height: 25px;
+  border: 2px solid $main-dark;
+  border-radius: 10px;
+}
+
+.text > input::placeholder {
+  font-weight: 700;
+  opacity: 0.4;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $main-dark;
+  font-weight: 700;
+}

@@ -61,7 +61,11 @@ for (let i = 0; i <= 4; i++) {
               localStorage.setItem("actualDay", JSON.stringify(actualDay))
             }
           }
-          location.href = "../index.html"
+          if (virtualArray == "") {
+            location.href = "../index.html"
+          } else {
+            location.href = "/pages/values.html"
+          }
         })
 
         removeButton.addEventListener("click", () => {
