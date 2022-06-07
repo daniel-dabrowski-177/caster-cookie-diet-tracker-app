@@ -18,7 +18,7 @@ h2 {
   background-color: $main;
   width: 210px;
   max-width: 425px;
-  height: 600px;
+  height: 300px;
   flex-wrap: wrap;
 }
 
@@ -28,5 +28,25 @@ h2 {
   background-color: white;
   border-radius: 30px;
   margin: 10px;
+  border: 2px solid $main-dark;
+}
+
+.clean-storage-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.clean-storage-wrapper p {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: $main-dark;
+}
+
+.clean-storage-wrapper button {
+  margin: auto;
+  border-radius: 10px;
+  background-color: $main;
+  color: $main-dark;
+  font-family: $Inter;
   border: 2px solid $main-dark;
 }

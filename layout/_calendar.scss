@@ -30,7 +30,7 @@
   justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .letter {
@@ -63,6 +63,31 @@
 
 .today {
   background-color: $gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.today .letter {
+  padding-top: 15px;
+}
+
+.today .number {
+  padding-top: 5px;
+}
+
+.today .activity {
+  padding-top: 5px;
+}
+
+.today::after {
+  font-family: $Inter;
+  font-size: 12px;
+  font-weight: 700;
+  content: "today";
+  position: relative;
+  top: 5px;
+  margin: auto;
 }
 
 .today > .letter {
@@ -79,6 +104,7 @@
 
 .pickedDay {
   background-color: $main;
+  color: $main;
 }
 
 .pickedDay > .letter {

@@ -45,6 +45,15 @@ let arr = {
   },
 }
 
+let x = localStorage.getItem("actualDay")
+if (x == null) {
+  let arrDay = arr.date
+  arr = JSON.stringify(arr)
+  localStorage.setItem("actualDay", arr)
+  localStorage.setItem(arrDay, arr)
+  arr = JSON.parse(arr)
+}
+
 renderDefault()
 
 // Create and Append "swiperSlide" element
@@ -89,11 +98,14 @@ for (let i = 0; currentDay <= lastFetchPoint; i++) {
 // Prepare "pickedDay" listener for each "Day" element
 let days = document.querySelectorAll(".day")
 days.forEach((d) => {
-  d.addEventListener("click", (e) => {
+  let dayData = d.children[1].attributes[1].nodeValue
+  if (dayData == actualDay.date) {
+    d.classList.add("pickedDay")
+  }
+  d.addEventListener("click", () => {
     days.forEach((el) => {
       el.classList.remove("pickedDay")
     })
-    let dayData = d.children[1].attributes[1].nodeValue
     let actualDay = localStorage.getItem("actualDay")
     actualDay = JSON.parse(actualDay)
     let arr = {
@@ -125,3 +137,14 @@ days.forEach((d) => {
     d.classList.add("pickedDay")
   })
 })
+
+// Clean 'mealTotal' for empty 'li'
+let ul = document.querySelectorAll("ul")
+let mealTotal = document.querySelectorAll(".meal-total")
+
+for (let i = 0; i < 4; i++) {
+  let totalLength = ul[i].childNodes.length
+  if (totalLength < 2) {
+    mealTotal[i].childNodes[0].data = "Total: 0 kcal"
+  }
+}

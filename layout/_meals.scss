@@ -33,6 +33,10 @@ ul {
   overflow-x: scroll;
 }
 
+ul::-webkit-scrollbar {
+  height: 0px;
+}
+
 .chosen .meal-wrapper {
   display: flex;
   margin: 0;

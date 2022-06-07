@@ -83,8 +83,7 @@ let renderOpen = (m, e) => {
   isOpen = isOpen === false ? true : false
   isOpen
     ? (m.style.textDecoration = "underline 2px")
-    : // && m.addEventListener("click", () => (location.href = "../index.html"))
-      (m.style.textDecoration = "")
+    : (m.style.textDecoration = "")
   isOpen
     ? currentSection.insertBefore(titles, lastChild)
     : currentSection.removeChild(titles)
@@ -130,10 +129,10 @@ let renderOpen = (m, e) => {
       <div class="product-weight">${values[i]}g</div>
       </div>
       <div class="units">
-      <p>${(values[i] * arrValues[i].prots) / 100} g</p>
-      <p>${(values[i] * arrValues[i].fats) / 100} g</p>
-      <p>${(values[i] * arrValues[i].carbs) / 100} g</p>
-      <p>${(values[i] * arrValues[i].calories) / 100} cals</p>
+      <p>${Math.round((values[i] * arrValues[i].prots) / 100)} g</p>
+      <p>${Math.round((values[i] * arrValues[i].fats) / 100)} g</p>
+      <p>${Math.round(values[i] * arrValues[i].carbs) / 100} g</p>
+      <p>${Math.round((values[i] * arrValues[i].calories) / 100)} cals</p>
       </div>`
     }
     MealWrapper[i].append(div)

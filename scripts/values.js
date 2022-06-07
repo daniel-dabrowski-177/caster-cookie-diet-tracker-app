@@ -27,11 +27,11 @@ for (let i = 0; i <= 3; i++) {
     </div>
     <div class="input-wrapper">
       <div class="text">
-        <input type="text" placeholder="100"  />
+        <input type="number" placeholder="100"  />
         <label>grams</label>
       </div>
       <div class="text">
-        <input type="text" placeholder="100" />
+        <input type="number" placeholder="100" />
         <label>calories</label>
       </div>
     </div>`

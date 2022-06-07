@@ -67,7 +67,7 @@ let products =
   {
     "id": "9",
     "name": "bread",
-    "calories": "264,6",
+    "calories": "264.6",
     "prots": "9",
     "fats": "3.2",
     "carbs": "49"
@@ -235,95 +235,95 @@ let products =
   {
     "id": "30",
     "name": "fig",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "74",
+    "prots": "0.8",
+    "fats": "0.3",
+    "carbs": "19.2"
   },
   {
     "id": "31",
     "name": "fish",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "205.8",
+    "prots": "22",
+    "fats": "12",
+    "carbs": "0"
   },
   {
     "id": "32",
     "name": "fries",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "311.9",
+    "prots": "3.4",
+    "fats": "15",
+    "carbs": "41"
   },
   {
     "id": "33",
     "name": "garlic",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "149",
+    "prots": "6.4",
+    "fats": "0.5",
+    "carbs": "33"
   },
   {
     "id": "34",
     "name": "grapes",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "66.9",
+    "prots": "0.6",
+    "fats": "0.4",
+    "carbs": "17"
   },
   {
     "id": "35",
     "name": "ham",
     "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "prots": "21",
+    "fats": "6",
+    "carbs": "1.5"
   },
   {
     "id": "36",
     "name": "honey",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "304",
+    "prots": "0.3",
+    "fats": "0",
+    "carbs": "82"
   },
   {
     "id": "37",
     "name": "lemon",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "28.9",
+    "prots": "1.1",
+    "fats": "0.3",
+    "carbs": "9"
   },
   {
     "id": "38",
     "name": "lime",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "30.1",
+    "prots": "0.7",
+    "fats": "0.2",
+    "carbs": "11"
   },
   {
     "id": "39",
     "name": "meat",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "143.4",
+    "prots": "26",
+    "fats": "3.5",
+    "carbs": "0"
   },
   {
     "id": "40",
     "name": "milk",
     "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "prots": "3.4",
+    "fats": "1",
+    "carbs": "5"
   },
   {
     "id": "41",
     "name": "mushroom",
-    "calories": "214",
+    "calories": "42.3",
     "prots": "9",
     "fats": "13",
     "carbs": "7"
@@ -331,50 +331,50 @@ let products =
   {
     "id": "42",
     "name": "mustard",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "66.4",
+    "prots": "4.4",
+    "fats": "4",
+    "carbs": "5"
   },
   {
     "id": "43",
     "name": "noodles",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "138.1",
+    "prots": "4.5",
+    "fats": "2.1",
+    "carbs": "25"
   },
   {
     "id": "44",
     "name": "octopus",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "164",
+    "prots": "30",
+    "fats": "2.1",
+    "carbs": "4.4"
   },
   {
     "id": "45",
     "name": "oil",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "884.1",
+    "prots": "0",
+    "fats": "100",
+    "carbs": "0"
   },
   {
     "id": "46",
     "name": "olives",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "115",
+    "prots": "0.8",
+    "fats": "11",
+    "carbs": "6"
   },
   {
     "id": "47",
     "name": "onion",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "39.7",
+    "prots": "1.1",
+    "fats": "0.1",
+    "carbs": "9"
   },
   {
     "id": "48",
