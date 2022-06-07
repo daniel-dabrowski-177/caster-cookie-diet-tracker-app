@@ -1,0 +1,83 @@
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Share {
+  margin-left: 15px;
+}
+
+.total {
+  margin-right: 15px;
+}
+
+.text {
+  width: 70px;
+}
+
+.meal-props {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-direction: column;
+  height: auto;
+  color: $main;
+}
+
+.meal-props > label {
+  margin-top: 10px;
+  font-size: 20px;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.meal-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.meal-product {
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex: 0.4;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.meal-bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  width: 80px;
+  height: 80px;
+  border-radius: 30px;
+}
+
+.meal-bg-img > img {
+  width: 60px;
+  height: 60px;
+}
+
+.meal-name {
+  align-self: center;
+  color: $main;
+}
+
+.meal-weight {
+  align-self: center;
+}
+
+.meal-categories {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  width: auto;
+  justify-content: space-around;
+  margin-left: 30px;
+}

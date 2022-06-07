@@ -1,42 +1,36 @@
 .swiper {
-  background-color: $sky-blue;
+  position: fixed;
+  top: 0;
+  background-color: $main-light;
   border-radius: 40px;
-  max-width: 425px;
-  height: 135px;
-}
-
-.short {
-  min-height: 135px;
-}
-
-.mid {
-  min-height: 250px;
-}
-
-.large {
-  min-height: 500px;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
-
-.week {
+  width: 100vw;
   display: flex;
-  margin: 35px 20px 10px 20px;
-  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper > label {
+  margin-top: 10px;
+  color: $main;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.swiper-slide {
+  display: flex;
+  margin-top: 15px;
 }
 
 .day {
   display: flex;
   flex-direction: column;
-  min-width: 45px;
-  min-height: 85px;
+  width: 12vw;
+  height: 65px;
   background-color: white;
   border-radius: 15px;
   justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .letter {
@@ -48,13 +42,14 @@
 
 .number {
   display: flex;
-  color: $lightblue;
+  color: $main-dark;
   justify-content: center;
 }
 
 .activity {
   display: flex;
   justify-content: center;
+  margin-bottom: 5px;
 }
 
 .dot {
@@ -66,19 +61,19 @@
   margin-right: 2px;
 }
 
-.active {
+.today {
   background-color: $gray;
 }
 
-.active > .letter {
-  color: $lightblue;
+.today > .letter {
+  color: $main-light;
 }
 
-.active > .number {
+.today > .number {
   color: $white;
 }
 
-.active > .activity > .dot {
+.today > .activity > .dot {
   background-color: $white;
 }
 
@@ -88,11 +83,17 @@ a {
 }
 
 .banner {
+  position: fixed;
+  top: 133px;
+  display: flex;
+  width: 100vw;
+}
+
+.bar {
   height: 6px;
   width: 55px;
   border-radius: 50px;
   margin: auto;
-  margin-top: 8px;
   background-color: $gray;
   cursor: pointer;
 }

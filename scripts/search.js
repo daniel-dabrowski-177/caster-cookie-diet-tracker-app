@@ -1,4 +1,5 @@
 const searchInput = document.querySelector("#search")
+let product = document.querySelectorAll(".product")
 
 searchInput.addEventListener("input", (e) => {
   const value = e.target.value.toLowerCase()

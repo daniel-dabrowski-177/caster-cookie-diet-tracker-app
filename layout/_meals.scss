@@ -1,11 +1,33 @@
 section {
-  margin: 0;
-  padding: 0;
-  background-color: $sky-blue;
+  background-color: $main-light;
   margin-top: 20px;
   border-radius: 30px;
   font-weight: 700;
   height: 135px;
+}
+
+.box {
+  justify-self: center;
+  margin: auto;
+  width: 320px;
+  height: 40px;
+  background-color: blue;
+}
+
+.box2 {
+  justify-self: center;
+  margin: auto;
+  width: 320px;
+  height: 40px;
+  background-color: violet;
+}
+
+.box3 {
+  justify-self: center;
+  margin: auto;
+  width: 320px;
+  height: 40px;
+  background-color: red;
 }
 
 .labels {
@@ -13,11 +35,12 @@ section {
   justify-content: space-between;
   margin-left: 25px;
   margin-right: 25px;
-  color: $lightblue;
+  color: $main;
   font-size: 18px;
 }
 
 .meal-name {
+  color: $main;
   margin-top: 10px;
 }
 
@@ -33,10 +56,7 @@ ul {
   list-style: none;
   display: flex;
   margin-top: 10px;
-  // margin-left: 40px;
-  // margin-right: 40px;
   overflow-x: scroll;
-  // scrollbar-width: 0px;
 }
 
 li {
@@ -49,7 +69,7 @@ li {
   align-items: center;
   width: 55px;
   height: 55px;
-  border-radius: 50%;
+  border-radius: 40%;
   background-color: $white;
   margin-left: 0px;
   margin-right: 20px;
@@ -66,7 +86,7 @@ li > label {
   align-items: center;
   justify-content: center;
   margin-top: 5px;
-  color: $blue;
+  color: $main-dark;
   font-weight: 700;
   margin-bottom: 15px;
   margin-left: 0px;
