@@ -1,18 +1,12 @@
 let container = document.querySelector(".container")
 
-let actualDay = localStorage.getItem("actualDay")
-let actualMeal = localStorage.getItem("actualMeal")
+let Breakfast = localStorage.getItem("Breakfast")
+let Dinner = localStorage.getItem("Dinner")
+let Supper = localStorage.getItem("Supper")
+let Other = localStorage.getItem("Other")
 
-actualDay = JSON.parse(actualDay)
-console.log(actualDay)
-console.log(actualMeal)
-
-let MealsName = {
-  1: "Breakfast",
-  2: "Dinner",
-  3: "Supper",
-  4: "Other",
-}
+let MealsName = ["Breakfast", "Dinner", "Supper", "Other"]
+let Items = [Breakfast, Dinner, Supper, Other]
 
 let virtualArray = [""]
 
@@ -20,12 +14,12 @@ let applyButton = document.querySelector(".applyButton")
 let removeButton = document.querySelector(".removeButton")
 let chooseButtons = document.querySelector(".chooseButtons")
 
-for (let i = 0; i <= 4; i++) {
-  if (actualMeal == MealsName[i]) {
-    virtualArray = actualDay.products[i - 1]
-    console.log(virtualArray)
+for (let i = 0; i < MealsName.length; i++) {
+  if (localStorage.sesionName == MealsName[i]) {
+    virtualArray = Items[i]
+    virtualArray = JSON.parse(virtualArray)
 
-    for (let i = 0; i <= products.length; i++) {
+    for (let i = 0; i < products.length; i++) {
       // 1. Create divs
       let div = document.createElement("div")
       div.innerHTML = `<div class="bg-icon">
@@ -55,28 +49,22 @@ for (let i = 0; i <= 4; i++) {
 
         // 4.1 Apply or Discard changes
         applyButton.addEventListener("click", () => {
-          for (let i = 0; i <= 4; i++) {
-            if (actualMeal == MealsName[i]) {
-              console.log(actualDay.date)
-              console.log(virtualArray)
-              console.log(i)
-              console.log(actualDay.products[i - 1])
-              console.log(actualDay)
-
-              localStorage.setItem(actualDay.date, JSON.stringify(actualDay))
+          for (let i = 0; i < MealsName.length; i++) {
+            if (localStorage.sesionName == MealsName[i]) {
+              localStorage.setItem(MealsName[i], JSON.stringify(virtualArray))
             }
           }
+          // console.log(virtualArray)
           location.href = "../index.html"
         })
-
-        // removeButton.addEventListener("click", () => {
-        //   for (let i = 0; i < 4; i++) {
-        //     if (actualMeal == MealsName[i]) {
-        //       localStorage.setItem(MealsName[i], `[""]`)
-        //       location.reload()
-        //     }
-        //   }
-        // })
+        removeButton.addEventListener("click", () => {
+          for (let i = 0; i < MealsName.length; i++) {
+            if (localStorage.sesionName == MealsName[i]) {
+              localStorage.setItem(MealsName[i], `[""]`)
+              location.reload()
+            }
+          }
+        })
       })
       container.appendChild(div)
     }

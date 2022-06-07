@@ -144,9 +144,26 @@ days.forEach((d) => {
       },
     }
 
+    arr = JSON.stringify(arr)
+
     if (localStorage.getItem(dayData) == null) {
-      arr = JSON.stringify(arr)
       localStorage.setItem(dayData, arr)
+      localStorage.setItem("actualDay", arr)
+    } else {
+      let actualData = localStorage.getItem(dayData)
+      localStorage.setItem("actualDay", actualData)
     }
+    renderMeals()
+
+    let swiperEl = document.querySelector(".swiper")
+    console.log(d.children[1].textContent)
+    console.log(swiperEl.children[0].textContent)
+    dayData
+    console.log(dayData)
+
+    swiperEl.children[0].textContent = null
+
+    swiperEl.children[0].textContent =
+      d.children[1].textContent + " " + swiperEl.children[0].textContent
   })
 })

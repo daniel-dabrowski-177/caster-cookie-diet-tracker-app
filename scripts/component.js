@@ -1,52 +1,44 @@
-// let meals = [Breakfast, Dinner, Supper, Other]
+let renderMeals = () => {
+  let section = document.querySelectorAll("section")
 
-// Here we get Arrays as a string
-let Breakfast = localStorage.getItem("Breakfast")
-let Dinner = localStorage.getItem("Dinner")
-let Supper = localStorage.getItem("Supper")
-let Other = localStorage.getItem("Other")
+  let actualDay = localStorage.getItem("actualDay")
+  actualDay = JSON.parse(actualDay)
 
-// Here we translate Arrays to objects
-Breakfast = JSON.parse(Breakfast)
-Dinner = JSON.parse(Dinner)
-Supper = JSON.parse(Supper)
-Other = JSON.parse(Other)
-
-///////////////////////////////////////////////////////////
-
-let Meals = [Breakfast, Dinner, Supper, Other]
-
-let ul = document.querySelectorAll("ul")
-
-for (let i = 0; i < 4; i++) {
-  for (let j = 1; j < Meals[i].length; j++) {
-    let li = document.createElement("li")
-
-    li.innerHTML = `<li>
-          <div class="img-bg">
-            <img src="img/icons/${Meals[i][j]}.png" alt="" />
-          </div>
-            <label>60g</label>
-        </li>`
-    ul[i].prepend(li)
+  for (let i = 0; i < 4; i++) {
+    section[i].children[1].remove()
+    let newUl = document.createElement("ul")
+    newUl.innerHTML = `<img class="add" src="img/tools/add.svg" />`
+    section[i].append(newUl)
   }
+
+  for (let i = 0; i < 4; i++) {
+    for (let j = 1; j < actualDay.products[i].length; j++) {
+      let li = document.createElement("li")
+      let ul = document.querySelectorAll("ul")
+
+      li.innerHTML = `<div class="img-bg">
+          <img src="img/icons/${actualDay.products[i][j]}.png" alt="" />
+        </div>
+          <label>${actualDay.values[i][j]}g</label>`
+      ul[i].prepend(li)
+    }
+  }
+
+  let ul = document.querySelectorAll("ul")
+  let Breakfast = ul[0].parentNode.children[0].children[0].textContent
+  let Dinner = ul[1].parentNode.children[0].children[0].textContent
+  let Supper = ul[2].parentNode.children[0].children[0].textContent
+  let Other = ul[3].parentNode.children[0].children[0].textContent
+  let Meals = [Breakfast, Dinner, Supper, Other]
+
+  let add = document.querySelectorAll(".add")
+
+  add.forEach((e) => {
+    e.addEventListener("click", (e) => {
+      let actualMeal =
+        e.target.parentNode.parentNode.childNodes[1].childNodes[1].textContent
+      localStorage.setItem("actualMeal", actualMeal)
+      location.href = "pages/backpack.html"
+    })
+  })
 }
-
-ul.forEach((i) => {
-  i.addEventListener("click", (e) => {
-    // console.log(Meals)
-  })
-})
-
-///////////////////////////////////////////////////////////
-
-let add = document.querySelectorAll(".add")
-
-add.forEach((e) => {
-  e.addEventListener("click", (e) => {
-    let SectionName =
-      e.target.parentNode.parentNode.childNodes[1].childNodes[1].textContent
-    localStorage.setItem("sesionName", SectionName)
-    location.href = "pages/backpack.html"
-  })
-})
