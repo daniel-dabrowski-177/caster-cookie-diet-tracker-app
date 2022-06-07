@@ -1,6 +1,5 @@
 let swiperEl = document.querySelector(".swiper")
 let swiperWrapper = document.querySelector(".swiper-wrapper")
-
 let week = ["M", "T", "W", "T", "F", "S", "S"]
 let month = [
   "January",
@@ -48,18 +47,19 @@ let arr = {
 
 renderDefault()
 
+// Create and Append "swiperSlide" element
 for (let i = 0; currentDay <= lastFetchPoint; i++) {
   let swiperSlide = document.createElement("div")
   swiperSlide.classList.add("swiper-slide")
   swiperWrapper.append(swiperSlide)
 
+  // Create and Prepare "Day" elements
   for (let h = 0; h < 7; h++) {
     currentDay = new Date(
       firstFetchPoint.getFullYear(),
       firstFetchPoint.getMonth(),
       firstFetchPoint.getDate() + i
     )
-
     let day = document.createElement("div")
     day.classList.add("day")
     day.innerHTML = `
@@ -86,18 +86,16 @@ for (let i = 0; currentDay <= lastFetchPoint; i++) {
   numberOfDays++
 }
 
+// Prepare "pickedDay" listener for each "Day" element
 let days = document.querySelectorAll(".day")
-
 days.forEach((d) => {
   d.addEventListener("click", (e) => {
     days.forEach((el) => {
       el.classList.remove("pickedDay")
     })
-
     let dayData = d.children[1].attributes[1].nodeValue
     let actualDay = localStorage.getItem("actualDay")
     actualDay = JSON.parse(actualDay)
-
     let arr = {
       date: dayData,
       products: {
@@ -115,6 +113,7 @@ days.forEach((d) => {
     }
     arr = JSON.stringify(arr)
 
+    // Prepare and Render "ActualDay" for Calendar's page
     if (localStorage.getItem(dayData) == null) {
       localStorage.setItem(dayData, arr)
       localStorage.setItem("actualDay", arr)
@@ -122,7 +121,6 @@ days.forEach((d) => {
       let actualData = localStorage.getItem(dayData)
       localStorage.setItem("actualDay", actualData)
     }
-
     renderDefault()
     d.classList.add("pickedDay")
   })

@@ -16,7 +16,6 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  // width: 415px;
   height: 100px;
   margin: auto;
   margin-top: 10px;
@@ -115,4 +114,15 @@ label {
 .confirm > img {
   width: 30px;
   height: 30px;
+}
+
+.addButton {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.addButton img {
+  margin-top: 5px;
 }

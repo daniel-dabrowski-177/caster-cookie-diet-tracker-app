@@ -1,4 +1,6 @@
 let renderDefault = () => {
+  let mealTotal = document.querySelectorAll(".meal-total")
+  let names = ["Breakfast", "Dinner", "Supper", "Other"]
   let section = document.querySelectorAll("section")
   let actualDay = localStorage.getItem("actualDay")
   actualDay = JSON.parse(actualDay)
@@ -10,8 +12,6 @@ let renderDefault = () => {
     newUl.innerHTML = `<img class="add" src="img/tools/add.svg" />`
     section[i].append(newUl)
   }
-
-  // console.log(actualDay)
 
   // Create function for "add" button
   let add = document.querySelectorAll(".add")
@@ -30,11 +30,8 @@ let renderDefault = () => {
   let swiperEl = document.querySelector(".swiper")
   dayData = dayData.split(".", 3)
   let calendarDay = dayData[0]
-
   dayData = dayData[1].split("0", 2)
-
   let calendarMonth = month[dayData[1]]
-
   swiperEl.children[0].textContent = null
   swiperEl.children[0].textContent = calendarDay + " " + calendarMonth
 
@@ -53,5 +50,16 @@ let renderDefault = () => {
           </div>`
       ul[i].prepend(li)
     }
+  }
+
+  // Display Total Calories
+  for (let i = 0; i < names.length; i++) {
+    let numbers = actualDay.values[i]
+    let total = 0
+    numbers = numbers.map(Number)
+    for (let i = 0; i < numbers.length; i++) {
+      total += numbers[i]
+    }
+    mealTotal[i].textContent = "Total: " + total + " kcal"
   }
 }

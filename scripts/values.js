@@ -12,7 +12,6 @@ chooseButtons.style.height = "170px"
 let actualDay = localStorage.getItem("actualDay")
 let actualMeal = localStorage.getItem("actualMeal")
 actualDay = JSON.parse(actualDay)
-// console.log(actualDay.products)
 
 for (let i = 0; i <= 3; i++) {
   if (actualMeal == meals[i]) {
@@ -36,7 +35,6 @@ for (let i = 0; i <= 3; i++) {
         <label>calories</label>
       </div>
     </div>`
-
       ul.append(newLi)
     }
   }
