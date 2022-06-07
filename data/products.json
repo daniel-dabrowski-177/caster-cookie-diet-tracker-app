@@ -83,7 +83,7 @@ let products =
   {
     "id": "11",
     "name": "nutella",
-    "calories": "214",
+    "calories": "541",
     "prots": "9",
     "fats": "13",
     "carbs": "7"

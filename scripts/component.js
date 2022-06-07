@@ -11,7 +11,7 @@ let renderDefault = () => {
     section[i].append(newUl)
   }
 
-  console.log(actualDay)
+  // console.log(actualDay)
 
   // Create function for "add" button
   let add = document.querySelectorAll(".add")
@@ -19,7 +19,7 @@ let renderDefault = () => {
     e.addEventListener("click", (e) => {
       let actualMeal =
         e.target.parentNode.parentNode.childNodes[1].childNodes[1].textContent
-      console.log(actualMeal)
+      // console.log(actualMeal)
       localStorage.setItem("actualMeal", actualMeal)
       location.href = "pages/backpack.html"
     })
@@ -49,8 +49,7 @@ let renderDefault = () => {
       li.innerHTML = `<div class="img-bg">
           <img src="img/icons/${actualDay.products[i][j]}.png" alt="" />
         </div>
-          <label>100g</label>`
-      // <label>${actualDay.values[i][j]}g</label>`
+          <label>${actualDay.values[i][j]}g</label>`
       ul[i].prepend(li)
     }
   }

@@ -4,8 +4,8 @@ let actualDay = localStorage.getItem("actualDay")
 let actualMeal = localStorage.getItem("actualMeal")
 
 actualDay = JSON.parse(actualDay)
-console.log(actualDay)
-console.log(actualMeal)
+// console.log(actualDay)
+// console.log(actualMeal)
 
 let MealsName = {
   1: "Breakfast",
@@ -23,7 +23,7 @@ let chooseButtons = document.querySelector(".chooseButtons")
 for (let i = 0; i <= 4; i++) {
   if (actualMeal == MealsName[i]) {
     virtualArray = actualDay.products[i - 1]
-    console.log(virtualArray)
+    // console.log(virtualArray)
 
     for (let i = 0; i <= products.length; i++) {
       // 1. Create divs
