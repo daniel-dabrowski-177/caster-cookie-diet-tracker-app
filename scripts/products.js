@@ -1,8 +1,7 @@
 let container = document.querySelector(".container")
 
-let actualDay = localStorage.getItem("actualDay")
 let actualMeal = localStorage.getItem("actualMeal")
-
+let actualDay = localStorage.getItem("actualDay")
 actualDay = JSON.parse(actualDay)
 // console.log(actualDay)
 // console.log(actualMeal)
@@ -71,8 +70,16 @@ for (let i = 0; i <= 4; i++) {
         removeButton.addEventListener("click", () => {
           for (let i = 0; i < 4; i++) {
             if (actualMeal == MealsName[i]) {
-              localStorage.setItem(actualDay.date, `[""]`)
-              location.reload()
+              let actualDay = localStorage.getItem("actualDay")
+              actualDay = JSON.parse(actualDay)
+              // localStorage.setItem(actualDay.date, `[""]`)
+              // location.reload()
+
+              let trashArray = actualDay.products[i - 1]
+              let arr = actualDay
+              console.log(i - 1)
+              console.log(actualDay.date)
+              console.log(arr)
             }
           }
         })

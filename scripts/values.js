@@ -51,31 +51,19 @@ for (let i = 1; i < productsName.length; i++) {
 }
 
 let li = document.querySelectorAll("li")
-
 for (let i = 0; i < li.length; i++) {
   let grams = li[i].children[1].children[0].children[0]
   let cals = li[i].children[1].children[1].children[0]
-
   cals.placeholder = productsCals[i + 1]
 
   grams.addEventListener("input", (e) => {
     const value = e.target.value
-    // console.log(value)
-
     cals.value = Math.round((productsCals[i + 1] / 100) * value)
-
-    // productsGrams[i + 1] = value
-    // console.log(productsGrams)
   })
 
   cals.addEventListener("input", (e) => {
     const value = e.target.value
-    // console.log(value)
-
     grams.value = Math.round((100 / productsCals[i + 1]) * value)
-
-    // productsCals[i + 1] = value
-    // console.log(productsCals)
   })
 
   confirmBtn.addEventListener("click", () => {
@@ -87,12 +75,7 @@ for (let i = 0; i < li.length; i++) {
 
     for (let i = 0; i <= 3; i++) {
       if (actualMeal == meals[i]) {
-        console.log(productsGrams)
-        console.log(actualDay.values[i])
-        console.log(i)
-
         actualDay.values[i] = productsGrams
-        console.log(actualDay)
 
         localStorage.setItem(actualDay.date, JSON.stringify(actualDay))
         localStorage.setItem("actualDay", JSON.stringify(actualDay))

@@ -16,6 +16,7 @@ let month = [
   "November",
   "December",
 ]
+let pickedDay
 
 const today = new Date()
 const lastDay = new Date(today.getFullYear() - 2, today.getMonth(), 0)
@@ -86,18 +87,16 @@ for (let i = 0; currentDay <= lastFetchPoint; i++) {
 }
 
 let days = document.querySelectorAll(".day")
+
 days.forEach((d) => {
-  d.addEventListener("click", () => {
+  d.addEventListener("click", (e) => {
+    days.forEach((el) => {
+      el.classList.remove("pickedDay")
+    })
+
     let dayData = d.children[1].attributes[1].nodeValue
     let actualDay = localStorage.getItem("actualDay")
     actualDay = JSON.parse(actualDay)
-
-    console.log(actualDay.date)
-    console.log(dayData)
-
-    if (actualDay.date == dayData) {
-      d.classList.add("pickedDay")
-    }
 
     let arr = {
       date: dayData,
@@ -123,6 +122,8 @@ days.forEach((d) => {
       let actualData = localStorage.getItem(dayData)
       localStorage.setItem("actualDay", actualData)
     }
+
     renderDefault()
+    d.classList.add("pickedDay")
   })
 })

@@ -38,9 +38,6 @@ let renderDefault = () => {
   swiperEl.children[0].textContent = null
   swiperEl.children[0].textContent = calendarDay + " " + calendarMonth
 
-  // let actualDay = localStorage.getItem("actualDay")
-  // actualDay = JSON.parse(actualDay)
-
   for (let i = 0; i < 4; i++) {
     for (let j = 1; j < actualDay.products[i].length; j++) {
       let li = document.createElement("li")
