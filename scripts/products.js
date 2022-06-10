@@ -3,8 +3,7 @@ let container = document.querySelector(".container")
 let actualMeal = localStorage.getItem("actualMeal")
 let actualDay = localStorage.getItem("actualDay")
 actualDay = JSON.parse(actualDay)
-// console.log(actualDay)
-// console.log(actualMeal)
+let count = 0
 
 let MealsName = {
   1: "Breakfast",
@@ -45,46 +44,83 @@ for (let i = 0; i <= 4; i++) {
 
         if (div.classList[1] == null) {
           div.classList.add("clicked")
+          count++
           virtualArray.push(div.children[1].textContent)
         } else {
           div.classList.remove("clicked")
+          count--
           let pos = virtualArray.indexOf(div.children[1].textContent)
           virtualArray.splice(pos, 1)
         }
 
-        // 4.1 Apply or Discard changes
-        applyButton.addEventListener("click", () => {
-          for (let i = 0; i <= 4; i++) {
-            if (actualMeal == MealsName[i]) {
-              localStorage.setItem(actualDay.date, JSON.stringify(actualDay))
-              localStorage.setItem("actualDay", JSON.stringify(actualDay))
-            }
-          }
-          if (virtualArray == "") {
-            location.href = "../index.html"
-          } else {
-            location.href = "/pages/values.html"
-          }
-        })
+        // Create counter for Trashbin to see how many products user checked
+        let clicked = document.querySelectorAll(".clicked")
+        count = clicked.length
 
-        removeButton.addEventListener("click", () => {
-          for (let i = 0; i < 4; i++) {
-            if (actualMeal == MealsName[i]) {
-              let actualDay = localStorage.getItem("actualDay")
-              actualDay = JSON.parse(actualDay)
-              // localStorage.setItem(actualDay.date, `[""]`)
-              // location.reload()
+        let counter = document.createElement("p")
+        counter.classList.add("counter")
+        counter.textContent = ""
+        counter.textContent = count
 
-              let trashArray = actualDay.products[i - 1]
-              let arr = actualDay
-              console.log(i - 1)
-              console.log(actualDay.date)
-              console.log(arr)
-            }
-          }
-        })
+        if (removeButton.children.length > 1) {
+          removeButton.removeChild(removeButton.children[0])
+        }
+        removeButton.prepend(counter)
+
+        if (count == 0) {
+          chooseButtons.style.display = "none"
+        }
       })
       container.appendChild(div)
     }
   }
+}
+
+// Apply or Discard changes
+applyButton.addEventListener("click", () => {
+  for (let i = 0; i <= 4; i++) {
+    if (actualMeal == MealsName[i]) {
+      localStorage.setItem(actualDay.date, JSON.stringify(actualDay))
+      localStorage.setItem("actualDay", JSON.stringify(actualDay))
+    }
+  }
+  if (virtualArray == "") {
+    location.href = "../index.html"
+  } else {
+    location.href = "/pages/values.html"
+  }
+})
+
+removeButton.addEventListener("click", () => {
+  for (let i = 0; i < 4; i++) {
+    if (actualMeal == MealsName[i]) {
+      let actualDay = localStorage.getItem("actualDay")
+      actualDay = JSON.parse(actualDay)
+
+      actualDay.products[i - 1] = [""]
+      actualDay.values[i - 1] = [""]
+
+      actualDay = JSON.stringify(actualDay)
+      localStorage.setItem("actualDay", actualDay)
+      localStorage.setItem(actualDay.date, actualDay)
+
+      location.reload()
+    }
+  }
+})
+
+// More Trashbin setups...
+let clicked = document.querySelectorAll(".clicked")
+console.log(clicked.length)
+
+if (clicked.length > 0) {
+  chooseButtons.style.display = "block"
+  let counter = document.createElement("p")
+  counter.classList.add("counter")
+  counter.textContent = clicked.length
+
+  if (removeButton.children.length > 1) {
+    removeButton.removeChild(removeButton.children[0])
+  }
+  removeButton.prepend(counter)
 }

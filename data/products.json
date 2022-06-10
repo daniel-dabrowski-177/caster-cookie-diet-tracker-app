@@ -82,22 +82,14 @@ let products =
   },
   {
     "id": "11",
-    "name": "nutella",
-    "calories": "540.6",
-    "prots": "5",
-    "fats": "30",
-    "carbs": "62"
-  },
-  {
-    "id": "12",
     "name": "cabbage",
     "calories": "24.6",
-    "prots": "1,3",
+    "prots": "1.3",
     "fats": "0.1",
     "carbs": "6"
   },
   {
-    "id": "13",
+    "id": "12",
     "name": "cake",
     "calories": "256.9",
     "prots": "6",
@@ -105,7 +97,7 @@ let products =
     "carbs": "59"
   },
   {
-    "id": "14",
+    "id": "13",
     "name": "carrot",
     "calories": "41.3",
     "prots": "0.9",
@@ -113,7 +105,7 @@ let products =
     "carbs": "10"
   },
   {
-    "id": "15",
+    "id": "14",
     "name": "cauliflower",
     "calories": "24.9",
     "prots": "1.9",
@@ -121,7 +113,7 @@ let products =
     "carbs": "5"
   },
   {
-    "id": "16",
+    "id": "15",
     "name": "cereals",
     "calories": "379.1",
     "prots": "13",
@@ -129,7 +121,7 @@ let products =
     "carbs": "68"
   },
   {
-    "id": "17",
+    "id": "16",
     "name": "cheese",
     "calories": "402.5",
     "prots": "25",
@@ -137,7 +129,7 @@ let products =
     "carbs": "1.3"
   },
   {
-    "id": "18",
+    "id": "17",
     "name": "cherries",
     "calories": "50",
     "prots": "1",
@@ -145,7 +137,7 @@ let products =
     "carbs": "12"
   },
   {
-    "id": "19",
+    "id": "18",
     "name": "chili",
     "calories": "101.1",
     "prots": "10",
@@ -153,7 +145,7 @@ let products =
     "carbs": "9"
   },
   {
-    "id": "20",
+    "id": "19",
     "name": "chips",
     "calories": "536.1",
     "prots": "7",
@@ -161,7 +153,7 @@ let products =
     "carbs": "53"
   },
   {
-    "id": "21",
+    "id": "20",
     "name": "chives",
     "calories": "30.1",
     "prots": "3.3",
@@ -169,7 +161,7 @@ let products =
     "carbs": "4.4"
   },
   {
-    "id": "22",
+    "id": "21",
     "name": "chocolate",
     "calories": "545.6",
     "prots": "4.9",
@@ -177,7 +169,7 @@ let products =
     "carbs": "61"
   },
   {
-    "id": "23",
+    "id": "22",
     "name": "coconut",
     "calories": "354",
     "prots": "3.3",
@@ -185,7 +177,7 @@ let products =
     "carbs": "15"
   },
   {
-    "id": "24",
+    "id": "23",
     "name": "coffee",
     "calories": "0.5",
     "prots": "0.1",
@@ -193,7 +185,7 @@ let products =
     "carbs": "0"
   },
   {
-    "id": "25",
+    "id": "24",
     "name": "cookies",
     "calories": "501.9",
     "prots": "6",
@@ -201,7 +193,7 @@ let products =
     "carbs": "65"
   },
   {
-    "id": "26",
+    "id": "25",
     "name": "corn",
     "calories": "99",
     "prots": "3.5",
@@ -209,7 +201,7 @@ let products =
     "carbs": "22"
   },
   {
-    "id": "27",
+    "id": "26",
     "name": "croissant",
     "calories": "406.1",
     "prots": "8",
@@ -217,7 +209,7 @@ let products =
     "carbs": "46"
   },
   {
-    "id": "28",
+    "id": "27",
     "name": "cucumber",
     "calories": "15",
     "prots": "0.7",
@@ -225,7 +217,7 @@ let products =
     "carbs": "3.6"
   },
   {
-    "id": "29",
+    "id": "28",
     "name": "egg",
     "calories": "155.1",
     "prots": "13",
@@ -233,7 +225,7 @@ let products =
     "carbs": "1.1"
   },
   {
-    "id": "30",
+    "id": "29",
     "name": "fig",
     "calories": "74",
     "prots": "0.8",
@@ -241,7 +233,7 @@ let products =
     "carbs": "19.2"
   },
   {
-    "id": "31",
+    "id": "30",
     "name": "fish",
     "calories": "205.8",
     "prots": "22",
@@ -249,7 +241,7 @@ let products =
     "carbs": "0"
   },
   {
-    "id": "32",
+    "id": "31",
     "name": "fries",
     "calories": "311.9",
     "prots": "3.4",
@@ -257,7 +249,7 @@ let products =
     "carbs": "41"
   },
   {
-    "id": "33",
+    "id": "32",
     "name": "garlic",
     "calories": "149",
     "prots": "6.4",
@@ -265,7 +257,7 @@ let products =
     "carbs": "33"
   },
   {
-    "id": "34",
+    "id": "33",
     "name": "grapes",
     "calories": "66.9",
     "prots": "0.6",
@@ -273,7 +265,7 @@ let products =
     "carbs": "17"
   },
   {
-    "id": "35",
+    "id": "34",
     "name": "ham",
     "calories": "214",
     "prots": "21",
@@ -281,7 +273,7 @@ let products =
     "carbs": "1.5"
   },
   {
-    "id": "36",
+    "id": "35",
     "name": "honey",
     "calories": "304",
     "prots": "0.3",
@@ -289,7 +281,7 @@ let products =
     "carbs": "82"
   },
   {
-    "id": "37",
+    "id": "36",
     "name": "lemon",
     "calories": "28.9",
     "prots": "1.1",
@@ -297,7 +289,7 @@ let products =
     "carbs": "9"
   },
   {
-    "id": "38",
+    "id": "37",
     "name": "lime",
     "calories": "30.1",
     "prots": "0.7",
@@ -305,7 +297,7 @@ let products =
     "carbs": "11"
   },
   {
-    "id": "39",
+    "id": "38",
     "name": "meat",
     "calories": "143.4",
     "prots": "26",
@@ -313,15 +305,15 @@ let products =
     "carbs": "0"
   },
   {
-    "id": "40",
+    "id": "39",
     "name": "milk",
-    "calories": "214",
+    "calories": "42.3",
     "prots": "3.4",
     "fats": "1",
     "carbs": "5"
   },
   {
-    "id": "41",
+    "id": "40",
     "name": "mushroom",
     "calories": "42.3",
     "prots": "9",
@@ -329,7 +321,7 @@ let products =
     "carbs": "7"
   },
   {
-    "id": "42",
+    "id": "41",
     "name": "mustard",
     "calories": "66.4",
     "prots": "4.4",
@@ -337,12 +329,20 @@ let products =
     "carbs": "5"
   },
   {
-    "id": "43",
+    "id": "42",
     "name": "noodles",
     "calories": "138.1",
     "prots": "4.5",
     "fats": "2.1",
     "carbs": "25"
+  },
+  {
+    "id": "43",
+    "name": "nutella",
+    "calories": "540.6",
+    "prots": "5",
+    "fats": "30",
+    "carbs": "62"
   },
   {
     "id": "44",
@@ -379,79 +379,79 @@ let products =
   {
     "id": "48",
     "name": "orange",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "47.1",
+    "prots": "0.9",
+    "fats": "0.1",
+    "carbs": "12"
   },
   {
     "id": "49",
     "name": "pancakes",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "227.1",
+    "prots": "6",
+    "fats": "10",
+    "carbs": "28"
   },
   {
     "id": "50",
     "name": "pasta",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "131",
+    "prots": "5",
+    "fats": "1.1",
+    "carbs": "25"
   },
   {
     "id": "51",
     "name": "peach",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "37.4",
+    "prots": "0.9",
+    "fats": "0.2",
+    "carbs": "9.4"
   },
   {
     "id": "52",
     "name": "pear",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "57.1",
+    "prots": "0.4",
+    "fats": "0.1",
+    "carbs": "15"
   },
   {
     "id": "53",
     "name": "peas",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "81",
+    "prots": "5",
+    "fats": "0.4",
+    "carbs": "14"
   },
   {
     "id": "54",
     "name": "pepper",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "39.7",
+    "prots": "1.9",
+    "fats": "0.4",
+    "carbs": "9"
   },
   {
     "id": "55",
     "name": "pickles",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "10.5",
+    "prots": "0.3",
+    "fats": "0.2",
+    "carbs": "2.3"
   },
   {
     "id": "56",
     "name": "pineapple",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "50",
+    "prots": "0.5",
+    "fats": "0.1",
+    "carbs": "13"
   },
   {
     "id": "57",
     "name": "pistachio",
-    "calories": "214",
+    "calories": "562.1",
     "prots": "9",
     "fats": "13",
     "carbs": "7"
@@ -460,184 +460,192 @@ let products =
     "id": "58",
     "name": "pomegranate",
     "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "prots": "20",
+    "fats": "45",
+    "carbs": "28"
   },
   {
     "id": "59",
     "name": "potatoes",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "76.7",
+    "prots": "2",
+    "fats": "0.1",
+    "carbs": "17"
   },
   {
     "id": "60",
     "name": "pudding",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "119.5",
+    "prots": "3.2",
+    "fats": "3.2",
+    "carbs": "20"
   },
   {
     "id": "61",
     "name": "pumpkin",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
+    "calories": "26.1",
+    "prots": "1",
+    "fats": "0.1",
     "carbs": "7"
   },
   {
     "id": "62",
     "name": "radish",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "15.8",
+    "prots": "0.7",
+    "fats": "0.1",
+    "carbs": "3.4"
   },
   {
     "id": "63",
     "name": "raspberry",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "52.6",
+    "prots": "1.2",
+    "fats": "0.7",
+    "carbs": "12"
   },
   {
     "id": "64",
     "name": "rice",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "130",
+    "prots": "2.7",
+    "fats": "0.3",
+    "carbs": "28"
   },
   {
     "id": "65",
     "name": "risotto",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "123.9",
+    "prots": "4.2",
+    "fats": "3.9",
+    "carbs": "16.2"
   },
   {
     "id": "66",
     "name": "salad",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "22.8",
+    "prots": "1.4",
+    "fats": "0.2",
+    "carbs": "4.9"
   },
   {
     "id": "67",
     "name": "salami",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "336.3",
+    "prots": "22",
+    "fats": "26",
+    "carbs": "2.4"
   },
   {
     "id": "68",
     "name": "salmon",
-    "calories": "214",
-    "prots": "9",
+    "calories": "208.2",
+    "prots": "20",
     "fats": "13",
-    "carbs": "7"
+    "carbs": "0"
   },
   {
     "id": "69",
     "name": "sausage",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "346.1",
+    "prots": "14",
+    "fats": "31",
+    "carbs": "0.7"
   },
   {
     "id": "70",
     "name": "shrimp",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "99.2",
+    "prots": "24",
+    "fats": "0.3",
+    "carbs": "0.2"
   },
   {
     "id": "71",
     "name": "spaguetti",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "157.7",
+    "prots": "6",
+    "fats": "0.9",
+    "carbs": "31"
   },
   {
     "id": "72",
     "name": "steak",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "270.5",
+    "prots": "25",
+    "fats": "19",
+    "carbs": "0"
   },
   {
     "id": "73",
     "name": "strawberry",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "31.9",
+    "prots": "0.7",
+    "fats": "0.3",
+    "carbs": "7.6"
   },
   {
     "id": "74",
     "name": "sushi",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "93",
+    "prots": "2.9",
+    "fats": "0.7",
+    "carbs": "18.4"
   },
   {
     "id": "75",
     "name": "taco",
-    "calories": "214",
+    "calories": "226.1",
     "prots": "9",
     "fats": "13",
-    "carbs": "7"
+    "carbs": "20"
   },
   {
     "id": "76",
     "name": "toast",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "313.3",
+    "prots": "13",
+    "fats": "4.3",
+    "carbs": "56"
   },
   {
     "id": "77",
     "name": "toffee",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "559.7",
+    "prots": "1.1",
+    "fats": "33",
+    "carbs": "65"
   },
   {
     "id": "78",
     "name": "tomato",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "18",
+    "prots": "0.9",
+    "fats": "0.2",
+    "carbs": "3.9"
   },
   {
     "id": "79",
     "name": "turkey",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "188.8",
+    "prots": "29",
+    "fats": "7",
+    "carbs": "0.1"
   },
   {
     "id": "80",
     "name": "watermelon",
-    "calories": "214",
-    "prots": "9",
-    "fats": "13",
-    "carbs": "7"
+    "calories": "30.4",
+    "prots": "0.6",
+    "fats": "0.2",
+    "carbs": "8"
+  },
+  {
+    "id": "81",
+    "name": "butter",
+    "calories": "716.8",
+    "prots": "0.9",
+    "fats": "81",
+    "carbs": "0.1"
   }
 ]

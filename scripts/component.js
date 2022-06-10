@@ -19,7 +19,6 @@ let renderDefault = () => {
     e.addEventListener("click", (e) => {
       let actualMeal =
         e.target.parentNode.parentNode.childNodes[1].childNodes[1].textContent
-      // console.log(actualMeal)
       localStorage.setItem("actualMeal", actualMeal)
       location.href = "pages/backpack.html"
     })
@@ -50,16 +49,5 @@ let renderDefault = () => {
           </div>`
       ul[i].prepend(li)
     }
-  }
-
-  // Display Total Calories
-  for (let i = 0; i < names.length; i++) {
-    let numbers = actualDay.values[i]
-    let total = 0
-    numbers = numbers.map(Number)
-    for (let i = 0; i < numbers.length; i++) {
-      total += numbers[i]
-    }
-    mealTotal[i].textContent = "Total: " + total + " kcal"
   }
 }

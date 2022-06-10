@@ -148,3 +148,24 @@ for (let i = 0; i < 4; i++) {
     mealTotal[i].childNodes[0].data = "Total: 0 kcal"
   }
 }
+
+// Display Total Calories
+for (let k = 0; k < 4; k++) {
+  let cArr = []
+  let vArr = actualDay.products[k]
+  vArr.reverse().pop()
+  let total = 0
+
+  cArr = actualDay.values[k]
+  cArr.reverse().pop()
+  cArr = cArr.map(Number)
+
+  for (let i = 0; i < vArr.length; i++) {
+    for (let j = 0; j < products.length; j++) {
+      if (vArr[i] == products[j].name) {
+        total += Math.round((Number(products[j].calories) * cArr[i]) / 100)
+      }
+    }
+  }
+  mealTotal[k].textContent = "Total: " + total + " kcal"
+}

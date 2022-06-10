@@ -618,7 +618,7 @@ li > label {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 10px;
+  margin-top: 5px;
   background-color: #fff;
   height: 60px;
   width: 90px;
@@ -628,6 +628,12 @@ li > label {
 .removeButton > img {
   width: 40px;
   height: 40px;
+}
+
+.removeButton p {
+  color: lightcoral;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 .icon {
