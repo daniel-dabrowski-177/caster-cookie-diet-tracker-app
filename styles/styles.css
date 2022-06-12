@@ -731,7 +731,7 @@ content {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   overflow-y: scroll;
-  padding-bottom: 80px;
+  padding-bottom: 240px;
 }
 
 .searchbar {
