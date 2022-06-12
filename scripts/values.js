@@ -42,7 +42,9 @@ for (let i = 0; i <= 3; i++) {
     let newArr = actualDay.values[i]
     newArr.shift()
     for (let i = 0; i < inputWrapper.length; i++) {
-      inputWrapper[i].childNodes[1].childNodes[1].placeholder = newArr[i]
+      newArr[i] == null
+        ? (newArr[i] = 100)
+        : (inputWrapper[i].childNodes[1].childNodes[1].placeholder = newArr[i])
     }
   }
 }
@@ -88,3 +90,8 @@ for (let i = 0; i < li.length; i++) {
     }
   })
 }
+
+let add = document.querySelector(".add")
+add.addEventListener("click", () => {
+  location.href = "/pages/backpack.html"
+})
