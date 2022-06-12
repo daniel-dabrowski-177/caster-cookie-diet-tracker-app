@@ -79,7 +79,7 @@ let renderOpen = (m, e) => {
   renderValues(e, arrValues)
 
   // Dependencies isOpen function
-  // ... Values are separeted for cleaner documentation
+  // Values are separeted for cleaner documentation
   isOpen = isOpen === false ? true : false
   isOpen
     ? (m.style.textDecoration = "underline 2px")
@@ -123,7 +123,6 @@ let renderOpen = (m, e) => {
     let div = document.createElement("div")
     div.classList.add("product-info-wrapper")
     for (let j = 0; j < myProducts.length; j++) {
-      console.log(myProducts[j])
       div.innerHTML = `<div class="product-info">
       <div class="product-name">${arrValues[i].name}</div>
       <div class="product-weight">${values[i]}g</div>

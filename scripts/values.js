@@ -37,6 +37,13 @@ for (let i = 0; i <= 3; i++) {
     </div>`
       ul.append(newLi)
     }
+
+    inputWrapper = document.querySelectorAll(".input-wrapper")
+    let newArr = actualDay.values[i]
+    newArr.shift()
+    for (let i = 0; i < inputWrapper.length; i++) {
+      inputWrapper[i].childNodes[1].childNodes[1].placeholder = newArr[i]
+    }
   }
 }
 
