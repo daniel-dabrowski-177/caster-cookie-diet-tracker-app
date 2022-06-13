@@ -5,15 +5,13 @@ In addition to calories in general, you can track your macronutrient intake such
 It includes a weekly schedule that allows you to change the date. </br>
 App uses web storage to store information, i.e. data, products and values. </br>
 
-## Technologies used:
+## Technologies used: 📐
 > HTML & CSS </br>
 > Sass preprocesor </br>
 > JavaScript (without frameworks) </br>
 > swiper.js library
 
-## How does app works?
-
-## Project presentation:
+## Project presentation: ✨
 ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-diet-1.PNG)
 ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-diet-2.PNG) </br>
 ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-diet-3.PNG)
@@ -21,12 +19,12 @@ App uses web storage to store information, i.e. data, products and values. </br>
 ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-diet-5.png)
 ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-diet-6.png)
 
-## Future plans:
+## Future plans: 📚
 > Implement color change functionality </br>
 > Implement month </br>
 > Add element with total prots, fats and carbs to meal-property page
 
-## How to use:
+## How to use: 📝
 1. Click on the block at the "topbar" to choose day - "choosed date" above "topbar" will change also </br>
 2. You can swipe left and right for next or previous week </br>
 3. Dark-gray block characterizes the present day </br>
@@ -42,6 +40,6 @@ App uses web storage to store information, i.e. data, products and values. </br>
 #### !This is demo of an app and it uses localStorage, so if you are no longer interested to use it anymore, please click at the "camel icon" to go settings page, and restore your memory by clicking "Click me!" button! </br>
 !It is recommended to use the application in mobile mode
 
-## Links to project
+## Links to project 🔗
 Blue (classic) version -> https://caster-cookie-diet-tracker-app.netlify.app </br>
 Pink version -> https://caster-cookie-diet-tracker-app-pink.netlify.app
