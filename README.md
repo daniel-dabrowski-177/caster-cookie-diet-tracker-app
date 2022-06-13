@@ -1,7 +1,9 @@
 # Cookie_Diet_Tracker_App Project
 
 This application will help you control your diet. </br>
-In addition to calories in general, you can track your macronutrient intake such as protein, fat, and carbohydrates.  </br>
+In addition to calories in general, you can track your macronutrient intake such as protein, fat, and carbohydrates. </br>
+the app includes a weekly schedule that allows you to change the date. </br>
+The application uses web storage to store information, i.e. data, products and values. </br>
 
 ## Technologies used:
 > HTML & CSS </br>
