@@ -43,3 +43,4 @@ App uses web storage to store information, i.e. data, products and values. </br>
 
 ## Links to project
 https://caster-cookie-diet-tracker-app.netlify.app
+https://caster-cookie-diet-tracker-app-pink.netlify.app
