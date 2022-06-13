@@ -30,8 +30,8 @@ App uses web storage to store information, i.e. data, products and values. </br>
 4. Depending on the type of the meal you can select between 4 sections </br>
 5. To add products press the "add" button </br>
 6. At the backpack page you can choose products that you want to add </br>
-7. After selection you can press "agree" button to apply changes </br>
-8. You can also press "trashcan" button to discard changes </br>
+7. After selection you can press the "agree" button to apply changes </br>
+8. You can also press the "trashcan" button to discard changes </br>
 9. If you apply your changes, next step is to select values for your needs </br>
 10. Here you can enter "grams" or "calories" of your products and apply your changes </br>
 11. At the homepage you can click at the name of the meal to see more properties of your meal </br>
