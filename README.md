@@ -42,5 +42,5 @@ App uses web storage to store information, i.e. data, products and values. </br>
 #### !This is demo of an app and it uses localStorage, so if you are no longer interested to use it anymore, please click at the "camel icon" to go settings page, and restore your memory by clicking "Click me!" button!
 
 ## Links to project
-https://caster-cookie-diet-tracker-app.netlify.app </br>
-https://caster-cookie-diet-tracker-app-pink.netlify.app
+Blue (classic) version https://caster-cookie-diet-tracker-app.netlify.app </br>
+Pink version https://caster-cookie-diet-tracker-app-pink.netlify.app
