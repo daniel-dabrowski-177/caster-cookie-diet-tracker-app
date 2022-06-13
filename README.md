@@ -6,10 +6,10 @@ It includes a weekly schedule that allows you to change the date. </br>
 App uses web storage to store information, i.e. data, products and values. </br>
 
 ## Technologies used: 📐
-> HTML & CSS </br>
-> Sass preprocesor </br>
-> JavaScript (without frameworks) </br>
-> swiper.js library
+- HTML & CSS </br>
+- Sass preprocesor </br>
+- JavaScript (without frameworks) </br>
+- swiper.js library
 
 ## Project presentation: ✨
 ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-diet-1.PNG)
