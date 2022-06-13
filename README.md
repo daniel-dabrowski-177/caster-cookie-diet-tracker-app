@@ -13,9 +13,10 @@ App uses web storage to store information, i.e. data, products and values. </br>
 
 ## Project presentation:
 
-<!-- ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-1.PNG)
-![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-7.PNG)
-![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-6.PNG) -->
+![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-diet-1.PNG)
+![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-diet-2.PNG) </br>
+![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-diet-3.PNG)
+![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-diet-4.png)
 
 ## Future plans:
 > Implement color change functionality
