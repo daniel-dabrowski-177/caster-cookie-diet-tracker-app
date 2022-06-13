@@ -22,11 +22,12 @@ App uses web storage to store information, i.e. data, products and values. </br>
 ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-diet-6.png)
 
 ## Future plans:
-> Implement color change functionality
-> Implement month
+> Implement color change functionality </br>
+> Implement month </br>
+> Add element with total prots, fats and carbs to meal-property page
 
 ## How to use:
-1. Click on the block at the Topbar to choose day - choosed date will change also </br>
+1. Click on the block at the "topbar" to choose day - "choosed date" above "topbar" will change also </br>
 2. You can swipe left and right for next or previous week </br>
 3. Dark-gray block characterizes the present day </br>
 4. Depend on type of the meal you can select between 4 sections </br>
@@ -34,11 +35,11 @@ App uses web storage to store information, i.e. data, products and values. </br>
 6. At the backpack page you can choose products that you want to add </br>
 7. After selection you can press "agree" button to apply changes </br>
 8. You can also press "trashcan" button for discard changes </br>
-9. If you apply your changes next step is to select values for your needs </br>
+9. If you apply your changes, next step is to select values for your needs </br>
 10. Here you can enter "grams" or "calories" of your products and apply your changes </br>
-11. At the homepage you can click at the name of the meal to see more properties of your meals </br>
+11. At the homepage you can click at the name of the meal to see more properties of your meal </br>
 
-#### !This is demo app and it uses localStorage, so if you are not interested to use this app anymore, please click at the "camel icon" to go settings page, and restore your memory by clicking "Click me!" button!
+#### !This is demo of an app and it uses localStorage, so if you are no longer interested to use it anymore, please click at the "camel icon" to go settings page, and restore your memory by clicking "Click me!" button!
 
 ## Links to project
 https://caster-cookie-diet-tracker-app.netlify.app
