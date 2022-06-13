@@ -9,7 +9,7 @@ let renderDefault = () => {
   for (let i = 0; i < 4; i++) {
     section[i].children[1].remove()
     let newUl = document.createElement("ul")
-    newUl.innerHTML = `<img class="add" src="img/tools/add-strawberry.svg" />`
+    newUl.innerHTML = `<img class="add" src="img/tools/add.svg" />`
     section[i].append(newUl)
   }
 
