@@ -36,7 +36,7 @@ App uses web storage to store information, i.e. data, products and values. </br>
 10. Here you can enter "grams" or "calories" of your products and apply your changes </br>
 11. At the homepage you can click at the name of the meal to see more properties of your meal </br>
 
-#### !This is demo of an app and it uses localStorage, so if you are no longer interested to use it anymore, please click at the "camel icon" to go settings page, and restore your memory by clicking "Click me!" button! </br>
+#### !This is a demo of an app and it uses localStorage, so if you are no longer interested in using it, please press the "camel icon" to go settings page, and restore your memory by clicking "Click me!" button! </br>
 #### !It is recommended to use the application in mobile mode!
 
 ## Links to project 🔗
