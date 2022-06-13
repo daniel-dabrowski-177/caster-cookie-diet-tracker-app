@@ -20,9 +20,9 @@ App uses web storage to store information, i.e. data, products and values. </br>
 ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-diet-6.png)
 
 ## Future plans: 📚
-> Implement color change functionality </br>
-> Implement month </br>
-> Add element with total prots, fats and carbs to meal-property page
+- Implement color change functionality </br>
+- Implement month </br>
+- Add element with total prots, fats and carbs to meal-property page
 
 ## How to use: 📝
 1. Click on the block at the "topbar" to choose day - "choosed date" above "topbar" will change also </br>
