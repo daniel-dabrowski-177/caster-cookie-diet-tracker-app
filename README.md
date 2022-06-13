@@ -21,11 +21,10 @@ App uses web storage to store information, i.e. data, products and values. </br>
 
 ## Future plans: 📚
 - Implement color change functionality </br>
-- Implement month </br>
 - Add element with total prots, fats and carbs to meal-property page
 
 ## How to use: 📝
-1. Click on the block at the "topbar" to choose day - "choosed date" above "topbar" will change also </br>
+1. Click on the block at the "topbar" to choose day - "chosen date" above "topbar" will change also </br>
 2. You can swipe left and right for next or previous week </br>
 3. Dark-gray block characterizes the present day </br>
 4. Depend on type of the meal you can select between 4 sections </br>
