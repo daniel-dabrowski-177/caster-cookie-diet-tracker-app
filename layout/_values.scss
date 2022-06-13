@@ -22,7 +22,7 @@
   margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  border: 3px solid $main-dark;
+  border: 3px solid $color-primary-dark;
   border-radius: 20px;
 }
 
@@ -80,9 +80,9 @@
 .text > input {
   width: 50px;
   height: 25px;
-  border: 2px solid $main-dark;
+  border: 2px solid $color-primary-dark;
   border-radius: 10px;
-  color: $main-dark;
+  color: $color-primary-dark;
   font-weight: 700;
 }
 
@@ -96,7 +96,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $main-dark;
+  color: $color-primary-dark;
   font-weight: 700;
 }
 

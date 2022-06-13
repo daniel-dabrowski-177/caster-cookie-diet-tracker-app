@@ -1,5 +1,5 @@
 .settings-wrapper {
-  background-color: $main;
+  background-color: $color-primary;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -8,14 +8,14 @@
 
 h2 {
   margin-left: 40px;
-  color: $main-dark;
+  color: $color-primary-dark;
 }
 
 .color-wrapper {
   display: flex;
   justify-content: center;
   align-content: flex-start;
-  background-color: $main;
+  background-color: $color-primary;
   width: 210px;
   max-width: 425px;
   height: 300px;
@@ -28,7 +28,7 @@ h2 {
   background-color: white;
   border-radius: 30px;
   margin: 10px;
-  border: 2px solid $main-dark;
+  border: 2px solid $color-primary-dark;
 }
 
 .clean-storage-wrapper {
@@ -39,14 +39,14 @@ h2 {
 .clean-storage-wrapper p {
   margin-left: 50px;
   margin-right: 50px;
-  color: $main-dark;
+  color: $color-primary-dark;
 }
 
 .clean-storage-wrapper button {
   margin: auto;
   border-radius: 10px;
-  background-color: $main;
-  color: $main-dark;
+  background-color: $color-primary;
+  color: $color-primary-dark;
   font-family: $Inter;
-  border: 2px solid $main-dark;
+  border: 2px solid $color-primary-dark;
 }

@@ -4,7 +4,7 @@ body {
   margin: auto;
   box-sizing: border-box;
   height: 100%;
-  background-color: $main;
+  background-color: $color-primary;
   min-width: 320px;
   max-width: 425px;
 }
@@ -22,7 +22,7 @@ nav {
   position: fixed;
   bottom: 0;
   height: 90px;
-  background-color: $main-light;
+  background-color: $color-primary-light;
   width: 100vw;
   max-width: 425px;
   border-radius: 30px 30px 0 0;
@@ -30,7 +30,7 @@ nav {
 }
 
 nav > .navButtons {
-  background-color: $main-light;
+  background-color: $color-primary-light;
 }
 
 .swiper {

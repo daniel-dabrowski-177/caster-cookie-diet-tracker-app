@@ -9,7 +9,7 @@ content {
 }
 
 .container {
-  background-color: $main;
+  background-color: $color-primary;
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -28,7 +28,7 @@ content {
   height: 80px;
   background-color: $white;
   width: calc(100% - 20px);
-  background-color: $main;
+  background-color: $color-primary;
 }
 
 .search-icon {
@@ -85,12 +85,12 @@ content {
 }
 
 .clicked > .bg-icon {
-  border: 3px solid $main-dark;
-  background-color: $main-light;
+  border: 3px solid $color-primary-dark;
+  background-color: $color-primary-light;
 }
 
 .clicked > label {
-  color: $main-dark;
+  color: $color-primary-dark;
 }
 
 .bg-icon {

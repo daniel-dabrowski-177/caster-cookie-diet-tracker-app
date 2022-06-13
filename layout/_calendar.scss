@@ -1,7 +1,7 @@
 .swiper {
   position: fixed;
   top: 0;
-  background-color: $main-light;
+  background-color: $color-primary-light;
   border-radius: 0 0 30px 30px;
   display: flex;
   align-items: center;
@@ -10,7 +10,7 @@
 
 .swiper > label {
   margin-top: 10px;
-  color: $main;
+  color: $color-primary;
   font-weight: 700;
   font-size: 18px;
 }
@@ -43,7 +43,7 @@
 
 .number {
   display: flex;
-  color: $main-dark;
+  color: $color-primary-dark;
   justify-content: center;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .today > .letter {
-  color: $main-light;
+  color: $color-primary-light;
 }
 
 .today > .number {
@@ -104,8 +104,8 @@
 }
 
 .pickedDay {
-  background-color: $main;
-  color: $main;
+  background-color: $color-primary;
+  color: $color-primary;
 }
 
 .pickedDay > .letter {
