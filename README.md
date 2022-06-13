@@ -27,7 +27,7 @@ App uses web storage to store information, i.e. data, products and values. </br>
 1. Click on the block at the "topbar" to choose day - "chosen date" above "topbar" will change also </br>
 2. You can swipe left and right for next or previous week </br>
 3. Dark-gray block characterizes the present day </br>
-4. Depend on type of the meal you can select between 4 sections </br>
+4. Depending on the type of the meal you can select between 4 sections </br>
 5. To add products press the "add" button </br>
 6. At the backpack page you can choose products that you want to add </br>
 7. After selection you can press "agree" button to apply changes </br>
