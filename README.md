@@ -1,4 +1,4 @@
-# Cookie_Diet_Tracker_App Project 🍪🐪
+# Cookie Diet Tracker App Project 🍪🐪
 
 This application will help you control your diet. </br>
 In addition to calories in general, you can track your macronutrient intake such as protein, fat, and carbohydrates. </br>
